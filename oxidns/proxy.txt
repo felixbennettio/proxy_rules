@@ -1675,7 +1675,6 @@ domain:eastturkistan.net
 domain:eastturkistancc.org
 domain:eastturkistangovernmentinexile.us
 domain:easybib.com
-domain:easyca.ca
 domain:easypic.com
 domain:ebc.net.tw
 domain:ebony-beauty.com
@@ -7557,9 +7556,10 @@ full:fandom.zendesk.com
 full:faronics.kayako.com
 full:favoritescc-hamivideo2.cdn.hinet.net
 full:fbcdn-a.akamaihd.net
-full:firebase.google.com
 full:firebase.googleapis.com
 full:firebaseappcheck.googleapis.com
+full:firebaseappdistribution.googleapis.com
+full:firebaseapptesters.googleapis.com
 full:firebasedynamiclinks-ipv4.googleapis.com
 full:firebasedynamiclinks-ipv6.googleapis.com
 full:firebasedynamiclinks.googleapis.com
@@ -12865,6 +12865,7 @@ domain:code-class.ru
 domain:code.org
 domain:codeberg.org
 domain:codeberg.page
+domain:codebuff.com
 domain:codecademy.com
 domain:codeforaliving.io
 domain:codeforces.com
@@ -15402,7 +15403,6 @@ domain:financeleadsonline.com
 domain:financialadvisoriq.com
 domain:financialsoccer.ca
 domain:fincode.jp
-domain:find-a.jp
 domain:find-apple.com
 domain:findacard.com
 domain:findasians.live
@@ -15461,9 +15461,11 @@ domain:finlitsummit.org
 domain:fiotolia.com
 domain:fire-emblem-heroes.com
 domain:firebase.com
+domain:firebase.dev
 domain:firebase.io
 domain:firebaseapp.com
 domain:fireemblemawakening.com
+domain:firefox-portal-detection.com
 domain:firefox.hu
 domain:firefoxtweetmachine.com
 domain:firefoxusercontent.com
@@ -15820,6 +15822,7 @@ domain:freebdsmxxx.org
 domain:freebigmovies.com
 domain:freebs.com
 domain:freebsd.org
+domain:freebuff.com
 domain:freecamsfan.com
 domain:freecartoons.biz
 domain:freechatnow.com
@@ -18009,7 +18012,6 @@ domain:indianpornvideo.org
 domain:indianpornvideos2.com
 domain:indiansexmms2.com
 domain:indiansexpussy.com
-domain:indiansexstories.net
 domain:indiansexstories2.net
 domain:indienudes.com
 domain:indies-av.co.jp
@@ -19201,7 +19203,6 @@ domain:kinki.co.jp
 domain:kinklive.com
 domain:kinkoid.com
 domain:kinkyfamily.com
-domain:kinkypeepz.com
 domain:kinopoisk.ru
 domain:kinorium.com
 domain:kion.ru
@@ -22553,7 +22554,6 @@ domain:paygonline.com
 domain:payhulu.com
 domain:paylike.com
 domain:payment.ru
-domain:paypa1.com
 domain:paypa1.org
 domain:paypaal.com
 domain:paypal-activate.com
@@ -26030,6 +26030,7 @@ domain:tettediferro.it
 domain:tex-talk.net
 domain:texttobuy.org
 domain:texture.com
+domain:tfbnw.net
 domain:tferwq.com
 domain:tfsallin.net
 domain:tgdaily.co.kr
@@ -29496,7 +29497,6 @@ domain:pttweb.cc
 domain:quad9.net
 domain:shodan.io
 domain:tesco.com
-domain:tfbnw.net
 domain:umblr.com
 domain:upjav.org
 domain:whoer.com

@@ -1773,7 +1773,6 @@ DOMAIN-SUFFIX,eastturkistan.net
 DOMAIN-SUFFIX,eastturkistancc.org
 DOMAIN-SUFFIX,eastturkistangovernmentinexile.us
 DOMAIN-SUFFIX,easybib.com
-DOMAIN-SUFFIX,easyca.ca
 DOMAIN-SUFFIX,easypic.com
 DOMAIN-SUFFIX,ebc.net.tw
 DOMAIN-SUFFIX,ebony-beauty.com
@@ -7655,9 +7654,10 @@ DOMAIN,fandom.zendesk.com
 DOMAIN,faronics.kayako.com
 DOMAIN,favoritescc-hamivideo2.cdn.hinet.net
 DOMAIN,fbcdn-a.akamaihd.net
-DOMAIN,firebase.google.com
 DOMAIN,firebase.googleapis.com
 DOMAIN,firebaseappcheck.googleapis.com
+DOMAIN,firebaseappdistribution.googleapis.com
+DOMAIN,firebaseapptesters.googleapis.com
 DOMAIN,firebasedynamiclinks-ipv4.googleapis.com
 DOMAIN,firebasedynamiclinks-ipv6.googleapis.com
 DOMAIN,firebasedynamiclinks.googleapis.com
@@ -12963,6 +12963,7 @@ DOMAIN-SUFFIX,code-class.ru
 DOMAIN-SUFFIX,code.org
 DOMAIN-SUFFIX,codeberg.org
 DOMAIN-SUFFIX,codeberg.page
+DOMAIN-SUFFIX,codebuff.com
 DOMAIN-SUFFIX,codecademy.com
 DOMAIN-SUFFIX,codeforaliving.io
 DOMAIN-SUFFIX,codeforces.com
@@ -15500,7 +15501,6 @@ DOMAIN-SUFFIX,financeleadsonline.com
 DOMAIN-SUFFIX,financialadvisoriq.com
 DOMAIN-SUFFIX,financialsoccer.ca
 DOMAIN-SUFFIX,fincode.jp
-DOMAIN-SUFFIX,find-a.jp
 DOMAIN-SUFFIX,find-apple.com
 DOMAIN-SUFFIX,findacard.com
 DOMAIN-SUFFIX,findasians.live
@@ -15559,9 +15559,11 @@ DOMAIN-SUFFIX,finlitsummit.org
 DOMAIN-SUFFIX,fiotolia.com
 DOMAIN-SUFFIX,fire-emblem-heroes.com
 DOMAIN-SUFFIX,firebase.com
+DOMAIN-SUFFIX,firebase.dev
 DOMAIN-SUFFIX,firebase.io
 DOMAIN-SUFFIX,firebaseapp.com
 DOMAIN-SUFFIX,fireemblemawakening.com
+DOMAIN-SUFFIX,firefox-portal-detection.com
 DOMAIN-SUFFIX,firefox.hu
 DOMAIN-SUFFIX,firefoxtweetmachine.com
 DOMAIN-SUFFIX,firefoxusercontent.com
@@ -15918,6 +15920,7 @@ DOMAIN-SUFFIX,freebdsmxxx.org
 DOMAIN-SUFFIX,freebigmovies.com
 DOMAIN-SUFFIX,freebs.com
 DOMAIN-SUFFIX,freebsd.org
+DOMAIN-SUFFIX,freebuff.com
 DOMAIN-SUFFIX,freecamsfan.com
 DOMAIN-SUFFIX,freecartoons.biz
 DOMAIN-SUFFIX,freechatnow.com
@@ -18107,7 +18110,6 @@ DOMAIN-SUFFIX,indianpornvideo.org
 DOMAIN-SUFFIX,indianpornvideos2.com
 DOMAIN-SUFFIX,indiansexmms2.com
 DOMAIN-SUFFIX,indiansexpussy.com
-DOMAIN-SUFFIX,indiansexstories.net
 DOMAIN-SUFFIX,indiansexstories2.net
 DOMAIN-SUFFIX,indienudes.com
 DOMAIN-SUFFIX,indies-av.co.jp
@@ -19299,7 +19301,6 @@ DOMAIN-SUFFIX,kinki.co.jp
 DOMAIN-SUFFIX,kinklive.com
 DOMAIN-SUFFIX,kinkoid.com
 DOMAIN-SUFFIX,kinkyfamily.com
-DOMAIN-SUFFIX,kinkypeepz.com
 DOMAIN-SUFFIX,kinopoisk.ru
 DOMAIN-SUFFIX,kinorium.com
 DOMAIN-SUFFIX,kion.ru
@@ -22651,7 +22652,6 @@ DOMAIN-SUFFIX,paygonline.com
 DOMAIN-SUFFIX,payhulu.com
 DOMAIN-SUFFIX,paylike.com
 DOMAIN-SUFFIX,payment.ru
-DOMAIN-SUFFIX,paypa1.com
 DOMAIN-SUFFIX,paypa1.org
 DOMAIN-SUFFIX,paypaal.com
 DOMAIN-SUFFIX,paypal-activate.com
@@ -26128,6 +26128,7 @@ DOMAIN-SUFFIX,tettediferro.it
 DOMAIN-SUFFIX,tex-talk.net
 DOMAIN-SUFFIX,texttobuy.org
 DOMAIN-SUFFIX,texture.com
+DOMAIN-SUFFIX,tfbnw.net
 DOMAIN-SUFFIX,tferwq.com
 DOMAIN-SUFFIX,tfsallin.net
 DOMAIN-SUFFIX,tgdaily.co.kr
@@ -29594,7 +29595,6 @@ DOMAIN-SUFFIX,pttweb.cc
 DOMAIN-SUFFIX,quad9.net
 DOMAIN-SUFFIX,shodan.io
 DOMAIN-SUFFIX,tesco.com
-DOMAIN-SUFFIX,tfbnw.net
 DOMAIN-SUFFIX,umblr.com
 DOMAIN-SUFFIX,upjav.org
 DOMAIN-SUFFIX,whoer.com
