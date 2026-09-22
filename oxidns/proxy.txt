@@ -6826,6 +6826,7 @@ domain:chenshan20042005.wordpress.com
 domain:china.ucanews.com
 domain:chinaview.wordpress.com
 domain:chinese.engadget.com
+domain:chineseposters.net
 domain:claude.ai
 domain:cldr.unicode.org
 domain:cloud.dify.ai
@@ -7186,6 +7187,7 @@ domain:news.tvbs.com.tw
 domain:news.ycombinator.com
 domain:nic.cz.cc
 domain:nikke.hotcool.tw
+domain:note.com
 domain:nytimes.map.fastly.net
 domain:old.honeynet.org
 domain:one.one.one.one
@@ -29465,7 +29467,6 @@ domain:logto.io
 domain:ndtv.com
 domain:njav.com
 domain:noip.com
-domain:note.com
 domain:ping0.cc
 domain:pomf.cat
 domain:ripe.net
