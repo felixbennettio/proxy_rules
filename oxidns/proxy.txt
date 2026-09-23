@@ -1140,6 +1140,7 @@ domain:chinesegay.org
 domain:chinesen.de
 domain:chinesenews.net.au
 domain:chinesepen.org
+domain:chineseposters.net
 domain:chineseradioseattle.com
 domain:chinesetalks.net
 domain:chineseupress.com
@@ -4003,6 +4004,7 @@ domain:nordstrommedia.com
 domain:nordstromrack.com
 domain:nordvpn.com
 domain:nos.nl
+domain:note.com
 domain:notepad-plus-plus.org
 domain:notion.so
 domain:nottinghampost.com
@@ -6826,7 +6828,6 @@ domain:chenshan20042005.wordpress.com
 domain:china.ucanews.com
 domain:chinaview.wordpress.com
 domain:chinese.engadget.com
-domain:chineseposters.net
 domain:claude.ai
 domain:cldr.unicode.org
 domain:cloud.dify.ai
@@ -7187,7 +7188,6 @@ domain:news.tvbs.com.tw
 domain:news.ycombinator.com
 domain:nic.cz.cc
 domain:nikke.hotcool.tw
-domain:note.com
 domain:nytimes.map.fastly.net
 domain:old.honeynet.org
 domain:one.one.one.one
