@@ -157,7 +157,6 @@ domain:32red.com
 domain:36rain.com
 domain:3a5a.com
 domain:3arabtv.com
-domain:3boys2girls.com
 domain:3d-game.com
 domain:3proxy.ru
 domain:3ren.ca
@@ -3482,7 +3481,6 @@ domain:manhuaren.com
 domain:maniash.com
 domain:manicur4ik.ru
 domain:mansion.com
-domain:mansionpoker.com
 domain:manta.com
 domain:manus.im
 domain:manyvoices.news
@@ -5238,7 +5236,6 @@ domain:surfeasy.com
 domain:surfeasy.com.au
 domain:surfshark.com
 domain:surge.run
-domain:suroot.com
 domain:surrenderat20.net
 domain:suyangg.com
 domain:suyingtv.com
@@ -5672,7 +5669,6 @@ domain:treemall.com.tw
 domain:trello.com
 domain:trendsmap.com
 domain:trialofccp.org
-domain:trickip.org
 domain:trimondi.de
 domain:tronscan.org
 domain:trouw.nl
@@ -15811,7 +15807,6 @@ domain:free-wap-tube.com
 domain:free-xxx-porn.org
 domain:free00.com
 domain:free18.net
-domain:free64all.com
 domain:freeadultgames.tv
 domain:freeanimalporn.net
 domain:freearabsexx.com
@@ -18329,7 +18324,6 @@ domain:internationalsaimoe.com
 domain:internet.ru
 domain:internetdownloadmanager.com
 domain:internetexplorer.co
-domain:internetexplorer.com
 domain:internetofeverything.com
 domain:interracial-sites.com
 domain:intescort.com
@@ -25002,7 +24996,6 @@ domain:site.com
 domain:sitepoint.com
 domain:siterips.org
 domain:siteripz.com
-domain:siteripz.net
 domain:situero.com
 domain:six9dy.pw
 domain:sixte.st

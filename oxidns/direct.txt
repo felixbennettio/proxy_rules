@@ -6030,7 +6030,6 @@ domain:163liao.com
 domain:163mail.cc
 domain:163mail.net
 domain:163nos.com
-domain:163ns.com
 domain:163py.com
 domain:163qb.com
 domain:163qikanlunwen.com
@@ -11894,7 +11893,6 @@ domain:86516edu.com
 domain:865211.com
 domain:86586222.com
 domain:86590.com
-domain:866.com
 domain:86656.net
 domain:866ds.com
 domain:8671099.com
@@ -12334,7 +12332,6 @@ domain:9191steel.com
 domain:9191zx.com
 domain:9193.com
 domain:91985.com
-domain:9199.com
 domain:919watch.com
 domain:91ac.com
 domain:91act.com
@@ -23537,7 +23534,6 @@ domain:chdmc.com
 domain:chdqyy.com
 domain:chdtp.com
 domain:che-shijie.com
-domain:che.com
 domain:che101.com
 domain:che168.net
 domain:che300.com
@@ -32873,7 +32869,6 @@ domain:du.biz
 domain:du7.com
 domain:du8.com
 domain:dualaid.com
-domain:dualspace.com
 domain:dualspacetech.com
 domain:duan.red
 domain:duangks.com
@@ -48940,7 +48935,6 @@ domain:huabanimg.com
 domain:huabanpro.com
 domain:huabbao.com
 domain:huabeicw.com
-domain:huabian.com
 domain:huabianyl.com
 domain:huabiaolaw.com
 domain:huabo.net
@@ -67419,7 +67413,6 @@ domain:muhemob.com
 domain:muhou.net
 domain:muhoujiemi.com
 domain:muhuo.chat
-domain:muidar.com
 domain:muimg.com
 domain:muin.cc
 domain:muinsoft.com
@@ -72346,7 +72339,6 @@ domain:peiyingefiles.com
 domain:peiyingo.com
 domain:peiyinshenqi.club
 domain:peiyinxiu.com
-domain:peiyou.com
 domain:peiyue.com
 domain:peizi.com
 domain:pejdw.com
