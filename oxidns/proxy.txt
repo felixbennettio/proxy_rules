@@ -157,6 +157,7 @@ domain:32red.com
 domain:36rain.com
 domain:3a5a.com
 domain:3arabtv.com
+domain:3boys2girls.com
 domain:3d-game.com
 domain:3proxy.ru
 domain:3ren.ca
@@ -3481,6 +3482,7 @@ domain:manhuaren.com
 domain:maniash.com
 domain:manicur4ik.ru
 domain:mansion.com
+domain:mansionpoker.com
 domain:manta.com
 domain:manus.im
 domain:manyvoices.news
@@ -18324,6 +18326,7 @@ domain:internationalsaimoe.com
 domain:internet.ru
 domain:internetdownloadmanager.com
 domain:internetexplorer.co
+domain:internetexplorer.com
 domain:internetofeverything.com
 domain:interracial-sites.com
 domain:intescort.com
