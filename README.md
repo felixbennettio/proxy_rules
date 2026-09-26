@@ -55,8 +55,8 @@ Use these URLs in mihomo `geox-url` configuration:
 
 ```yaml
 geox-url:
-  geoip: https://cdn.jsdelivr.net/gh/ciallothu/proxy_rules@main/geox/geoip.dat
-  geosite: https://cdn.jsdelivr.net/gh/ciallothu/proxy_rules@main/geox/geosite.dat
+  geoip: https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/geox/geoip.dat
+  geosite: https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/geox/geosite.dat
 ```
 
 ## Distribution
@@ -64,7 +64,7 @@ geox-url:
 Recommended jsDelivr endpoint:
 
 ```text
-https://cdn.jsdelivr.net/gh/ciallothu/proxy_rules@main/<file>
+https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/<file>
 ```
 
 Raw GitHub URLs can be used as fallback.
