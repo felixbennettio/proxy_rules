@@ -111,7 +111,7 @@ jobs:
 
           failures=0
           for file in "${published_files[@]}"; do
-            url="https://purge.jsdelivr.net/gh/ciallothu/proxy_rules@main/${file}"
+            url="https://purge.jsdelivr.net/gh/felixbennettio/proxy_rules@main/${file}"
             echo "Purging ${url}"
             curl --fail --location --silent --show-error --retry 5 --retry-delay 2 --retry-all-errors "${url}" || failures=$((failures + 1))
           done
