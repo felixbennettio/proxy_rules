@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "repository": "ciallothu/proxy_rules",
+  "repository": "felixbennettio/proxy_rules",
   "files": [
     "direct.list",
     "direct_added.list",
