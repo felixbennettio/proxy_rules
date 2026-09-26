@@ -3482,7 +3482,6 @@ domain:manhuaren.com
 domain:maniash.com
 domain:manicur4ik.ru
 domain:mansion.com
-domain:mansionpoker.com
 domain:manta.com
 domain:manus.im
 domain:manyvoices.news
@@ -16448,7 +16447,6 @@ domain:gogo-load.com
 domain:gogoanime.vc
 domain:gogoanime.wiki
 domain:gogoanime3.co
-domain:gogocdn.net
 domain:gogole.com
 domain:gogotaku.info
 domain:gohentai.net
