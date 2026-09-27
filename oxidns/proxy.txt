@@ -920,6 +920,7 @@ domain:c-est-simple.com
 domain:c-span.org
 domain:c-spanvideo.org
 domain:c.gle
+domain:c.go-mpulse.net
 domain:c.mi.com
 domain:c100tibet.org
 domain:c2cx.com
@@ -4549,6 +4550,7 @@ domain:qienkuen.org
 domain:qiwen.lu
 domain:qkshare.com
 domain:qmp4.com
+domain:qobuz.com
 domain:qoos.com
 domain:qq.co.za
 domain:qstatus.com
@@ -6005,6 +6007,7 @@ domain:vanpeople.com
 domain:vansky.com
 domain:vaticannews.va
 domain:vatn.org
+domain:vava8.com
 domain:vbstatic.co
 domain:vcf-online.org
 domain:vcfbuilder.org
@@ -16447,6 +16450,7 @@ domain:gogo-load.com
 domain:gogoanime.vc
 domain:gogoanime.wiki
 domain:gogoanime3.co
+domain:gogocdn.net
 domain:gogole.com
 domain:gogotaku.info
 domain:gohentai.net
@@ -23647,7 +23651,6 @@ domain:qmov.net
 domain:qmttqg3k.me
 domain:qnap.com
 domain:qnapsupport.net
-domain:qobuz.com
 domain:qoder.com
 domain:qombol.com
 domain:qoo-app.com
