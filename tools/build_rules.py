@@ -13,15 +13,37 @@ OXIDNS_DIR = ROOT / "oxidns"
 
 COMMENT_PREFIXES = ("#", ";", "//")
 PORTABLE_KINDS = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CIDR6", "IP-ASN"}
+IGNORED_SOURCE_MARKERS = {
+    # SukkaW embeds this leetspeak ownership marker in generated domain sets;
+    # it is metadata, not an AI service endpoint.
+    "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
+}
 
 # Generated lists are built only from current external upstream sources declared
 # here. Manual overrides live in *_added.list and are referenced separately by
 # client configs, so they are not merged into proxy/direct/reject outputs.
 SOURCES = {
-    "proxy": [
-        # AI / proxy / global
+    "ai": [
+        # Merge focused AI rules from several independently maintained projects.
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Copilot/Copilot.list",
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list",
+        "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AI.list",
+        "https://ruleset.skk.moe/List/non_ip/ai.conf",
+    ],
+    "push": [
+        # Mobile-vendor service sets are kept separate so push endpoints can be
+        # routed directly and protected from advertising-list false positives.
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/XiaoMi/XiaoMi.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Huawei/Huawei.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OPPO/OPPO.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Vivo/Vivo.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/MeiZu/MeiZu.list",
+    ],
+    "proxy": [
+        # Proxy / global
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OneDrive/OneDrive.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list",
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy_Domain.list",
@@ -29,8 +51,6 @@ SOURCES = {
         "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/proxy.txt",
         "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt",
         "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt",
-        "https://ruleset.skk.moe/List/non_ip/ai.conf",
-        "https://ruleset.skk.moe/List/non_ip/apple_intelligence.conf",
         "https://ruleset.skk.moe/List/non_ip/global.conf",
         "https://ruleset.skk.moe/List/non_ip/global_plus.conf",
         # Stream / media
@@ -79,7 +99,7 @@ SOURCES = {
         "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblocksurge.list",
         "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomo.yaml",
         "https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/clash.yaml",
-        "https://raw.githubusercontent.com/ciallothu/DD-AD/release/surge-domainset.txt",
+        "https://raw.githubusercontent.com/felixbennettio/DD-AD/release/surge-domainset.txt",
         "https://anti-ad.net/surge.txt",
         "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
         "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt",
@@ -161,6 +181,8 @@ def build(kind: str, payload: str, extra: str = "") -> str | None:
     extra = extra.strip().strip("'\"")
     if kind in {"DOMAIN", "DOMAIN-SUFFIX"}:
         domain = normalize_domain(payload)
+        if domain in IGNORED_SOURCE_MARKERS:
+            return None
         return f"{kind},{domain}" if looks_like_domain(domain) else None
     if kind == "DOMAIN-KEYWORD":
         return f"DOMAIN-KEYWORD,{payload}" if payload else None
@@ -203,6 +225,106 @@ def dedupe_keep_order(items: Iterable[str]) -> list[str]:
         if item not in seen:
             seen.add(item)
             out.append(item)
+    return out
+
+
+def domain_rule(rule: str) -> tuple[str, str] | None:
+    parts = [part.strip() for part in rule.split(",")]
+    if len(parts) < 2:
+        return None
+    kind = parts[0].upper()
+    if kind not in {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"}:
+        return None
+    return kind, parts[1].lower().strip(".\"")
+
+
+def domain_parents(domain: str) -> list[str]:
+    labels = domain.split(".")
+    return [".".join(labels[index:]) for index in range(len(labels))]
+
+
+class RuleIndex:
+    """Fast lookup index for precedence checks across very large rule lists."""
+
+    def __init__(self, rules: Iterable[str]) -> None:
+        self.rules = set(rules)
+        self.exact_domains: set[str] = set()
+        self.suffix_domains: set[str] = set()
+        self.keywords: set[str] = set()
+        self.overlap_suffixes: set[str] = set()
+        self.domain_values: set[str] = set()
+        for rule in self.rules:
+            parsed = domain_rule(rule)
+            if not parsed:
+                continue
+            kind, value = parsed
+            if kind == "DOMAIN":
+                self.exact_domains.add(value)
+            elif kind == "DOMAIN-SUFFIX":
+                self.suffix_domains.add(value)
+            else:
+                self.keywords.add(value)
+            if kind in {"DOMAIN", "DOMAIN-SUFFIX"}:
+                self.domain_values.add(value)
+                self.overlap_suffixes.update(domain_parents(value))
+
+    def matches_domain(self, domain: str) -> bool:
+        return (
+            domain in self.exact_domains
+            or any(parent in self.suffix_domains for parent in domain_parents(domain))
+            or any(keyword in domain for keyword in self.keywords)
+        )
+
+    def covers(self, rule: str) -> bool:
+        if rule in self.rules:
+            return True
+        parsed = domain_rule(rule)
+        if not parsed:
+            return False
+        kind, value = parsed
+        if kind == "DOMAIN":
+            return self.matches_domain(value)
+        if kind == "DOMAIN-SUFFIX":
+            return (
+                any(parent in self.suffix_domains for parent in domain_parents(value))
+                or any(keyword in value for keyword in self.keywords)
+            )
+        return any(keyword in value for keyword in self.keywords)
+
+    def overlaps(self, rule: str) -> bool:
+        if rule in self.rules:
+            return True
+        parsed = domain_rule(rule)
+        if not parsed:
+            return False
+        kind, value = parsed
+        if kind == "DOMAIN":
+            return self.matches_domain(value)
+        if kind == "DOMAIN-SUFFIX":
+            return (
+                value in self.overlap_suffixes
+                or any(parent in self.suffix_domains for parent in domain_parents(value))
+                or any(keyword in value for keyword in self.keywords)
+            )
+        return (
+            any(value in domain for domain in self.domain_values)
+            or any(value in keyword or keyword in value for keyword in self.keywords)
+        )
+
+
+def remove_overlaps(items: list[str], protected: list[str], label: str) -> list[str]:
+    """Remove any item that could override a protected AI or push target."""
+    protected_index = RuleIndex(protected)
+    out = [item for item in items if not protected_index.overlaps(item)]
+    eprint(f"[precedence] removed {len(items) - len(out)} overlapping {label} rules")
+    return out
+
+
+def remove_covered(items: list[str], higher_priority: list[str], label: str) -> list[str]:
+    """Remove only lower-priority rules wholly covered by a higher-priority set."""
+    higher_priority_index = RuleIndex(higher_priority)
+    out = [item for item in items if not higher_priority_index.covers(item)]
+    eprint(f"[precedence] removed {len(items) - len(out)} covered {label} rules")
     return out
 
 
@@ -309,19 +431,28 @@ def main() -> int:
     manual_proxy = read_local_rules(ROOT / "proxy_added.list")
     manual_direct = read_local_rules(ROOT / "direct_added.list")
 
-    reject = collect_group("reject")
-    proxy = collect_group("proxy")
-    direct = collect_group("direct")
+    ai = collect_group("ai")
+    push = collect_group("push")
+    protected = ai + push
 
-    reject_set = set(reject)
-    proxy = [r for r in proxy if r not in reject_set]
-    proxy_set = set(proxy)
-    direct = [r for r in direct if r not in reject_set and r not in proxy_set]
+    # AI and mobile push traffic must never be black-holed. Reject is normally
+    # higher priority, so remove even parent/child domain overlaps here.
+    reject = remove_overlaps(collect_group("reject"), protected, "reject")
 
+    # Client configs evaluate ai/push before generic proxy/direct rules. Keep a
+    # broader generic rule when only one child is protected, but remove rules
+    # that are fully covered to reduce duplication and ambiguity.
+    proxy = remove_covered(collect_group("proxy"), reject + ai + push, "proxy")
+    direct = remove_covered(collect_group("direct"), reject + ai + push + proxy, "direct")
+
+    write_rules(ROOT / "ai.list", "Consolidated AI rules", ai)
+    write_rules(ROOT / "push.list", "Consolidated mobile-vendor push/service rules", push)
     write_rules(ROOT / "reject.list", "Consolidated reject rules", reject)
     write_rules(ROOT / "proxy.list", "Consolidated proxy/global rules", proxy)
     write_rules(ROOT / "direct.list", "Consolidated direct/domestic rules", direct)
 
+    write_oxidns_rules(OXIDNS_DIR / "ai.txt", "Consolidated AI rules", ai)
+    write_oxidns_rules(OXIDNS_DIR / "push.txt", "Consolidated mobile-vendor push/service rules", push)
     write_oxidns_rules(OXIDNS_DIR / "reject_added.txt", "Manual reject rules", manual_reject)
     write_oxidns_rules(OXIDNS_DIR / "reject.txt", "Consolidated reject rules", reject)
     write_oxidns_rules(OXIDNS_DIR / "proxy_added.txt", "Manual proxy/global rules", manual_proxy)

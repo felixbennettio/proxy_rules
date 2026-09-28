@@ -9,10 +9,28 @@ The repository provides portable rule lists, generated OxiDNS domain sets, and m
 Generated rule files:
 
 ```text
+ai.list
+push.list
 proxy.list
 direct.list
 reject.list
 ```
+
+`ai.list` merges and deduplicates focused AI rules from blackmatrix7,
+ACL4SSR, Repcz, and SukkaW. `push.list` keeps the Xiaomi, Huawei, OPPO,
+vivo, and Meizu service families separate so mobile push traffic can be
+routed directly and adjusted without weakening the general reject list.
+
+The generator applies this precedence when resolving semantic domain
+overlaps:
+
+```text
+AI / mobile push > reject > generic proxy > generic direct
+```
+
+This includes parent/child domain relationships, not only identical lines.
+For example, a rejected `api.xmpush.xiaomi.com` entry is removed when the
+protected push set contains `xiaomi.com`.
 
 Manual override files:
 
@@ -55,8 +73,8 @@ Use these URLs in mihomo `geox-url` configuration:
 
 ```yaml
 geox-url:
-  geoip: https://cdn.jsdelivr.net/gh/ciallothu/proxy_rules@main/geox/geoip.dat
-  geosite: https://cdn.jsdelivr.net/gh/ciallothu/proxy_rules@main/geox/geosite.dat
+  geoip: https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/geox/geoip.dat
+  geosite: https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/geox/geosite.dat
 ```
 
 ## Distribution
@@ -64,7 +82,7 @@ geox-url:
 Recommended jsDelivr endpoint:
 
 ```text
-https://cdn.jsdelivr.net/gh/ciallothu/proxy_rules@main/<file>
+https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/<file>
 ```
 
 Raw GitHub URLs can be used as fallback.

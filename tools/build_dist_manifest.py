@@ -26,7 +26,7 @@ def main() -> int:
 
     manifest = {
         "schema_version": 1,
-        "repository": "ciallothu/proxy_rules",
+        "repository": "felixbennettio/proxy_rules",
         "files": list(PUBLISHED_FILES),
     }
     MANIFEST_PATH.write_text(
