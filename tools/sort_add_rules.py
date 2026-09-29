@@ -5,12 +5,9 @@ import ipaddress
 from pathlib import Path
 from typing import Any
 
+from rule_files import discover_addition_files
+
 ROOT = Path(__file__).resolve().parents[1]
-ADDED_FILES = (
-    ROOT / "proxy_added.list",
-    ROOT / "direct_added.list",
-    ROOT / "reject_added.list",
-)
 COMMENT_PREFIXES = ("#", ";", "//")
 RULE_TYPE_ORDER = {
     "DOMAIN": 0,
@@ -68,7 +65,7 @@ def rule_sort_key(rule: str) -> tuple[Any, ...]:
     )
 
 
-def sort_added_file(path: Path) -> bool:
+def sort_add_file(path: Path) -> bool:
     original = path.read_text(encoding="utf-8") if path.exists() else ""
     header: list[str] = []
     trailing_comments: list[str] = []
@@ -114,8 +111,8 @@ def sort_added_file(path: Path) -> bool:
 
 
 def main() -> int:
-    for path in ADDED_FILES:
-        sort_added_file(path)
+    for path in discover_addition_files(ROOT):
+        sort_add_file(path)
     return 0
 
 

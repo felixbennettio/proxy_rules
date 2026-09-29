@@ -21,26 +21,41 @@ ACL4SSR, Repcz, and SukkaW. `push.list` keeps the Xiaomi, Huawei, OPPO,
 vivo, and Meizu service families separate so mobile push traffic can be
 routed directly and adjusted without weakening the general reject list.
 
-The generator applies this precedence when resolving semantic domain
-overlaps:
+Cross-set deduplication is controlled by `RULE_PRIORITIES.json`. Larger numbers
+have higher priority. The default order is:
 
 ```text
-AI / mobile push > reject > generic proxy > generic direct
+AI (500) > mobile push (400) > reject (300) > generic proxy (200) > generic direct (100)
 ```
 
-This includes parent/child domain relationships, not only identical lines.
-For example, a rejected `api.xmpush.xiaomi.com` entry is removed when the
-protected push set contains `xiaomi.com`.
+Duplicate rules, and lower-priority rules fully covered by a higher-priority
+domain rule, are kept only in the higher-priority set. For example, a rejected
+`api.xmpush.xiaomi.com` entry is removed when the higher-priority push set
+contains `xiaomi.com`. Sets with the same priority do not remove rules from one
+another. A dynamically added set without a configured priority is generated
+unchanged; add its name to `RULE_PRIORITIES.json` to include it in cross-set
+deduplication.
 
 Manual override files:
 
 ```text
-proxy_added.list
-direct_added.list
-reject_added.list
+ai_add.list
+push_add.list
+proxy_add.list
+direct_add.list
+reject_add.list
 ```
 
-Do not edit generated files directly.
+Every manual addition is merged into its same-name canonical file. For example,
+rules in `ai_add.list` become part of `ai.list`; clients only need to reference
+`ai.list`.
+
+Rule-set names are discovered automatically; `rule10` is only an example, not a
+fixed name. Adding any `<name>.list` creates its OxiDNS output and distribution
+entry. Adding any `<name>_add.list` also creates or updates `<name>.list` and
+merges those additions. No workflow allow-list needs to be edited. For
+upstream-backed built-in sets, put custom rules in the `_add.list` file instead
+of editing the generated canonical file directly.
 
 ## OxiDNS files
 

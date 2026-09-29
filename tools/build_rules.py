@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import json
 import re
 import sys
 import time
@@ -8,8 +9,11 @@ import urllib.request
 from pathlib import Path
 from typing import Iterable
 
+from rule_files import addition_files, discover_addition_files, discover_rule_names
+
 ROOT = Path(__file__).resolve().parents[1]
 OXIDNS_DIR = ROOT / "oxidns"
+PRIORITIES_PATH = ROOT / "RULE_PRIORITIES.json"
 
 COMMENT_PREFIXES = ("#", ";", "//")
 PORTABLE_KINDS = {"DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "IP-CIDR", "IP-CIDR6", "IP-ASN"}
@@ -19,9 +23,9 @@ IGNORED_SOURCE_MARKERS = {
     "7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe",
 }
 
-# Generated lists are built only from current external upstream sources declared
-# here. Manual overrides live in *_added.list and are referenced separately by
-# client configs, so they are not merged into proxy/direct/reject outputs.
+# Built-in lists are rebuilt from current external upstream sources declared
+# here. Any matching *_add.list is merged into the canonical
+# output. Rule-set names not listed here are discovered from repository files.
 SOURCES = {
     "ai": [
         # Merge focused AI rules from several independently maintained projects.
@@ -251,8 +255,6 @@ class RuleIndex:
         self.exact_domains: set[str] = set()
         self.suffix_domains: set[str] = set()
         self.keywords: set[str] = set()
-        self.overlap_suffixes: set[str] = set()
-        self.domain_values: set[str] = set()
         for rule in self.rules:
             parsed = domain_rule(rule)
             if not parsed:
@@ -264,9 +266,6 @@ class RuleIndex:
                 self.suffix_domains.add(value)
             else:
                 self.keywords.add(value)
-            if kind in {"DOMAIN", "DOMAIN-SUFFIX"}:
-                self.domain_values.add(value)
-                self.overlap_suffixes.update(domain_parents(value))
 
     def matches_domain(self, domain: str) -> bool:
         return (
@@ -290,35 +289,6 @@ class RuleIndex:
                 or any(keyword in value for keyword in self.keywords)
             )
         return any(keyword in value for keyword in self.keywords)
-
-    def overlaps(self, rule: str) -> bool:
-        if rule in self.rules:
-            return True
-        parsed = domain_rule(rule)
-        if not parsed:
-            return False
-        kind, value = parsed
-        if kind == "DOMAIN":
-            return self.matches_domain(value)
-        if kind == "DOMAIN-SUFFIX":
-            return (
-                value in self.overlap_suffixes
-                or any(parent in self.suffix_domains for parent in domain_parents(value))
-                or any(keyword in value for keyword in self.keywords)
-            )
-        return (
-            any(value in domain for domain in self.domain_values)
-            or any(value in keyword or keyword in value for keyword in self.keywords)
-        )
-
-
-def remove_overlaps(items: list[str], protected: list[str], label: str) -> list[str]:
-    """Remove any item that could override a protected AI or push target."""
-    protected_index = RuleIndex(protected)
-    out = [item for item in items if not protected_index.overlaps(item)]
-    eprint(f"[precedence] removed {len(items) - len(out)} overlapping {label} rules")
-    return out
-
 
 def remove_covered(items: list[str], higher_priority: list[str], label: str) -> list[str]:
     """Remove only lower-priority rules wholly covered by a higher-priority set."""
@@ -363,14 +333,74 @@ def read_local_rules(path: Path) -> list[str]:
     return dedupe_keep_order(rules)
 
 
+def read_addition_rules(root: Path, name: str) -> list[str]:
+    rules: list[str] = []
+    for path in addition_files(root, name):
+        rules.extend(read_local_rules(path))
+    return dedupe_keep_order(rules)
+
+
+def load_priorities(path: Path) -> dict[str, int]:
+    if not path.is_file():
+        return {}
+    document = json.loads(path.read_text(encoding="utf-8"))
+    raw_priorities = document.get("priorities")
+    if not isinstance(raw_priorities, dict):
+        raise ValueError(f"{path.name}: 'priorities' must be an object")
+
+    priorities: dict[str, int] = {}
+    for name, value in raw_priorities.items():
+        if not isinstance(name, str) or not name:
+            raise ValueError(f"{path.name}: every rule-set name must be a non-empty string")
+        if isinstance(value, bool) or not isinstance(value, int):
+            raise ValueError(f"{path.name}: priority for {name!r} must be an integer")
+        priorities[name] = value
+    return priorities
+
+
+def apply_priorities(
+    rule_sets: dict[str, list[str]], priorities: dict[str, int]
+) -> dict[str, list[str]]:
+    """Remove lower-priority rules covered by a higher-priority rule set.
+
+    Larger integers mean higher priority. Sets sharing a priority do not remove
+    entries from one another. Unconfigured sets are generated unchanged.
+    """
+    output: dict[str, list[str]] = {}
+    higher_priority_rules: list[str] = []
+    configured_names = {name for name in rule_sets if name in priorities}
+
+    for priority in sorted({priorities[name] for name in configured_names}, reverse=True):
+        level_names = sorted(
+            (name for name in configured_names if priorities[name] == priority),
+            key=str.casefold,
+        )
+        level_rules: list[str] = []
+        for name in level_names:
+            output[name] = remove_covered(
+                rule_sets[name], higher_priority_rules, f"{name} (priority {priority})"
+            )
+            level_rules.extend(output[name])
+        higher_priority_rules.extend(level_rules)
+
+    for name, rules in rule_sets.items():
+        if name not in output:
+            output[name] = rules
+            if name not in priorities:
+                eprint(f"[precedence] {name}: no priority configured; kept unchanged")
+    return output
+
+
 def write_rules(path: Path, title: str, rules: list[str]) -> None:
+    name = path.stem
     body = [
         f"# {title}",
         "# Auto-generated by tools/build_rules.py.",
-        "# Do not edit this generated file directly; edit *_added.list or sources in tools/build_rules.py.",
-        "",
+        f"# Extra rules from {name}_add.list are merged automatically.",
     ]
-    body.extend(rules)
+    if rules:
+        body.append("")
+        body.extend(rules)
     body.append("")
     path.write_text("\n".join(body), encoding="utf-8")
     eprint(f"[write] {path.relative_to(ROOT)} ({len(rules)} rules)")
@@ -403,20 +433,23 @@ def write_oxidns_rules(path: Path, title: str, rules: list[str]) -> None:
         "# Do not edit this generated file directly.",
         "# DOMAIN -> full:, DOMAIN-SUFFIX -> domain:, DOMAIN-KEYWORD -> keyword:.",
         "# IP rules are intentionally omitted because OxiDNS domain_set matches qname only.",
-        "",
     ]
-    body.extend(entries)
+    if entries:
+        body.append("")
+        body.extend(entries)
     body.append("")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(body), encoding="utf-8")
     eprint(f"[write] {path.relative_to(ROOT)} ({len(entries)} OxiDNS domain rules)")
 
 
-def ensure_added_files() -> None:
+def ensure_add_files() -> None:
     templates = {
-        "proxy_added.list": "# Manual proxy rules. One portable classical rule per line.\n",
-        "direct_added.list": "# Manual direct rules. One portable classical rule per line.\n",
-        "reject_added.list": "# Manual reject rules. One portable classical rule per line.\n",
+        "ai_add.list": "# Manual AI rules. One portable classical rule per line.\n",
+        "push_add.list": "# Manual vendor-push rules. One portable classical rule per line.\n",
+        "proxy_add.list": "# Manual proxy rules. One portable classical rule per line.\n",
+        "direct_add.list": "# Manual direct rules. One portable classical rule per line.\n",
+        "reject_add.list": "# Manual reject rules. One portable classical rule per line.\n",
     }
     for filename, content in templates.items():
         path = ROOT / filename
@@ -425,40 +458,50 @@ def ensure_added_files() -> None:
 
 
 def main() -> int:
-    ensure_added_files()
+    ensure_add_files()
 
-    manual_reject = read_local_rules(ROOT / "reject_added.list")
-    manual_proxy = read_local_rules(ROOT / "proxy_added.list")
-    manual_direct = read_local_rules(ROOT / "direct_added.list")
+    # Discover before writing so any newly added <name>.list or <name>_add.list
+    # automatically creates the complete output set for that arbitrary name.
+    rule_names = discover_rule_names(ROOT, SOURCES)
 
-    ai = collect_group("ai")
-    push = collect_group("push")
-    protected = ai + push
+    raw_rules = {
+        name: dedupe_keep_order(collect_group(name) + read_addition_rules(ROOT, name))
+        for name in SOURCES
+    }
+    titles = {
+        "ai": "Consolidated AI rules",
+        "push": "Consolidated mobile-vendor push/service rules",
+        "reject": "Consolidated reject rules",
+        "proxy": "Consolidated proxy/global rules",
+        "direct": "Consolidated direct/domestic rules",
+    }
 
-    # AI and mobile push traffic must never be black-holed. Reject is normally
-    # higher priority, so remove even parent/child domain overlaps here.
-    reject = remove_overlaps(collect_group("reject"), protected, "reject")
+    # A custom canonical file is its own persistent base. Its matching additions
+    # are merged on every run, for any name, without editing this script or the workflow.
+    for name in rule_names:
+        if name in raw_rules:
+            continue
+        raw_rules[name] = dedupe_keep_order(
+            read_local_rules(ROOT / f"{name}.list") + read_addition_rules(ROOT, name)
+        )
+        titles[name] = f"Consolidated {name} rules"
 
-    # Client configs evaluate ai/push before generic proxy/direct rules. Keep a
-    # broader generic rule when only one child is protected, but remove rules
-    # that are fully covered to reduce duplication and ambiguity.
-    proxy = remove_covered(collect_group("proxy"), reject + ai + push, "proxy")
-    direct = remove_covered(collect_group("direct"), reject + ai + push + proxy, "direct")
+    canonical_rules = apply_priorities(raw_rules, load_priorities(PRIORITIES_PATH))
 
-    write_rules(ROOT / "ai.list", "Consolidated AI rules", ai)
-    write_rules(ROOT / "push.list", "Consolidated mobile-vendor push/service rules", push)
-    write_rules(ROOT / "reject.list", "Consolidated reject rules", reject)
-    write_rules(ROOT / "proxy.list", "Consolidated proxy/global rules", proxy)
-    write_rules(ROOT / "direct.list", "Consolidated direct/domestic rules", direct)
+    for name in rule_names:
+        rules = canonical_rules[name]
+        title = titles[name]
+        write_rules(ROOT / f"{name}.list", title, rules)
+        write_oxidns_rules(OXIDNS_DIR / f"{name}.txt", title, rules)
 
-    write_oxidns_rules(OXIDNS_DIR / "ai.txt", "Consolidated AI rules", ai)
-    write_oxidns_rules(OXIDNS_DIR / "push.txt", "Consolidated mobile-vendor push/service rules", push)
-    write_oxidns_rules(OXIDNS_DIR / "reject_added.txt", "Manual reject rules", manual_reject)
-    write_oxidns_rules(OXIDNS_DIR / "reject.txt", "Consolidated reject rules", reject)
-    write_oxidns_rules(OXIDNS_DIR / "proxy_added.txt", "Manual proxy/global rules", manual_proxy)
-    write_oxidns_rules(OXIDNS_DIR / "proxy.txt", "Consolidated proxy/global rules", proxy)
-    write_oxidns_rules(OXIDNS_DIR / "direct_added.txt", "Manual direct/domestic rules", manual_direct)
-    write_oxidns_rules(OXIDNS_DIR / "direct.txt", "Consolidated direct/domestic rules", direct)
+    # Keep standalone OxiDNS outputs for manual files for backward compatibility.
+    # New client configs should reference only the canonical <name>.txt file.
+    for path in discover_addition_files(ROOT):
+        write_oxidns_rules(
+            OXIDNS_DIR / f"{path.stem}.txt",
+            f"Manual additions from {path.name}",
+            read_local_rules(path),
+        )
     return 0
 
 

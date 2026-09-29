@@ -89,7 +89,6 @@ keyword:alipay
 keyword:aliyun
 keyword:baidu
 keyword:beplay
-keyword:microsoft
 keyword:officecdn
 keyword:taobao
 domain:00cdn.com
@@ -10689,7 +10688,6 @@ domain:7a8k.com
 domain:7a9b89eb3d333f2c.com
 domain:7ade93e381021.beer
 domain:7ahr.com
-domain:7analytics.com
 domain:7askzg5k.com
 domain:7b2.com
 domain:7b6466e191019.beer
@@ -11701,7 +11699,6 @@ domain:91yoyo.net
 domain:91yu.com
 domain:91yuedu.com
 domain:91yunying.com
-domain:91yxbox.com
 domain:91yywan.com
 domain:91zhongkao.com
 domain:91zhuti.com
@@ -39321,7 +39318,6 @@ domain:glass-org.com
 domain:glassbottleproducer.com
 domain:glasseasy.com
 domain:glassmicro.com
-domain:glavo.site
 domain:glaway.com
 domain:glawyer.net
 domain:glb3.com
@@ -59242,7 +59238,6 @@ domain:kx778.com
 domain:kx7p.com
 domain:kxapps.com
 domain:kxb100.com
-domain:kxbox.com
 domain:kxccjjt.com
 domain:kxceping.com
 domain:kxcq.com
@@ -65303,8 +65298,6 @@ domain:mindshow.fun
 domain:mindsun.com
 domain:mindway-sz.com
 domain:minebbs.com
-domain:minecraftxz.com
-domain:minecraftzw.com
 domain:minegoods.com
 domain:mineharmony.cc
 domain:minei.com
@@ -68028,7 +68021,6 @@ domain:ngnlink.net
 domain:ngo.com
 domain:ngotcmszh.com
 domain:ngread.com
-domain:ngrok.cc
 domain:ngs1685.com
 domain:ngswgs.com
 domain:ngtravelercn.com
@@ -83982,7 +83974,6 @@ domain:suqun-group.com
 domain:suredeliverses.com
 domain:surely.cool
 domain:surerp.com
-domain:surface-microsoftstore.com
 domain:surfacetreatmentgroup.com
 domain:surfcg.com
 domain:surgerii.com
@@ -95838,7 +95829,6 @@ domain:xbmiaomu.com
 domain:xbniao.com
 domain:xbnj.net
 domain:xbongbong.com
-domain:xboxfan.com
 domain:xbpex.com
 domain:xbptc.com
 domain:xbrl-cn.org
@@ -103945,7 +103935,6 @@ domain:yxaz.com
 domain:yxbabe.com
 domain:yxbhhbkj.com
 domain:yxbk.com
-domain:yxbox91.com
 domain:yxbrand.com
 domain:yxc.hk
 domain:yxcal.com
@@ -109111,7 +109100,6 @@ domain:ag2.dji.com
 domain:agms-us.dji.com
 domain:agms.dji.com
 domain:akashop1.akamai.com
-domain:analytics.lenovo.com
 domain:api-ar.cnno1.uds.lenovo.com
 domain:api-ar.euwe1.uds.lenovo.com
 domain:api-ar.naea1.uds.lenovo.com
@@ -109731,8 +109719,6 @@ domain:tencent-cloud.cn
 full:www.layuicdn.com
 domain:dl.bscstorage.net
 domain:dl.pinyuncloud.com
-full:assets1.xboxlive.cn
-full:assets2.xboxlive.cn
 full:gstore.val.manlaxy.com
 full:media.cdn.queniuqe.com
 full:cdnstatic.tencentcs.com

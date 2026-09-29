@@ -8,10 +8,12 @@ on:
   push:
     branches: [main]
     paths:
-      - "tools/sort_added_rules.py"
+      - "tools/sort_add_rules.py"
+      - "tools/rule_files.py"
       - "tools/build_rules.py"
       - "tools/build_dist_manifest.py"
       - "tools/fetch_geox.py"
+      - "RULE_PRIORITIES.json"
       - "DIST_MANIFEST.json"
       - "*.list"
       - "oxidns/**"
@@ -40,8 +42,8 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Sort manual added rules
-        run: python3 tools/sort_added_rules.py
+      - name: Sort manual add rules
+        run: python3 tools/sort_add_rules.py
 
       - name: Build consolidated rule files
         run: python3 tools/build_rules.py
@@ -55,7 +57,6 @@ jobs:
       - name: Show generated changes
         run: |
           set -euo pipefail
-          added_files=("proxy_added.list" "direct_added.list" "reject_added.list")
           mapfile -t published_files < <(
             python3 - <<'PY'
           import json
@@ -65,13 +66,12 @@ jobs:
               print(path)
           PY
           )
-          git status --short -- "${added_files[@]}" "${published_files[@]}" DIST_MANIFEST.json
-          git diff -- "${added_files[@]}" "${published_files[@]}" DIST_MANIFEST.json
+          git status --short -- "${published_files[@]}" DIST_MANIFEST.json
+          git diff -- "${published_files[@]}" DIST_MANIFEST.json
 
       - name: Commit sorted and generated files
         run: |
           set -euo pipefail
-          added_files=("proxy_added.list" "direct_added.list" "reject_added.list")
           mapfile -t published_files < <(
             python3 - <<'PY'
           import json
@@ -81,7 +81,7 @@ jobs:
               print(path)
           PY
           )
-          generated_files=("${added_files[@]}" "${published_files[@]}" "DIST_MANIFEST.json")
+          generated_files=("${published_files[@]}" "DIST_MANIFEST.json")
 
           if [ -z "$(git status --porcelain -- "${generated_files[@]}")" ]; then
             echo "No manual-rule, generated-rule, GeoX, or distribution-manifest changes."
