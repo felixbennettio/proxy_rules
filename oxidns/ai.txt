@@ -130,3 +130,4 @@ domain:jasper.ai
 domain:openart.ai
 domain:poe.com
 keyword:alkalimakersuite-pa.clients6.google.com
+domain:muse.ai
