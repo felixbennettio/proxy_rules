@@ -34103,7 +34103,6 @@ domain:fibodata.com
 domain:fibrlink.net
 domain:ficochina.net
 domain:ficowshen.com
-domain:fiehff.com
 domain:fieldcommunicator.net
 domain:fifa666.com
 domain:fifaschool.com
@@ -72730,7 +72729,6 @@ domain:qfdengn.com
 domain:qfedu.com
 domain:qfeiche.com
 domain:qfiee.com
-domain:qfihdr.com
 domain:qfkjnb.club
 domain:qflyinc.com
 domain:qfns1.com

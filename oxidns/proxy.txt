@@ -216,6 +216,8 @@ full:foxnewsplayer-a.akamaihd.net
 full:gamedownloads-rockstargames-com.akamaized.net
 full:gamer-cds.cdn.hinet.net
 full:gamer2-cds.cdn.hinet.net
+full:geminiweb-pa.clients.google.com
+full:geminiweb-pa.clients6.google.com
 full:gigabyte2.azureedge.net
 full:github-api.arkoselabs.com
 full:github-cloud.s3.amazonaws.com
@@ -13330,6 +13332,7 @@ domain:huaren.us
 domain:huaren4us.com
 domain:huarenav.com
 domain:huarenporn.com
+domain:huarun.win
 domain:huashangnews.com
 domain:huashundg.com
 domain:huasing.org
@@ -17003,6 +17006,7 @@ domain:messybrainz.org
 domain:messytube.com
 domain:met-nude.com
 domain:meta.com
+domain:metaaivm.com
 domain:metabora.io
 domain:metabrainz.org
 domain:metacafe.com
@@ -19724,6 +19728,7 @@ domain:openbase.com
 domain:openbook.org.tw
 domain:opencas.io
 domain:openclaw.ai
+domain:opencode.ai
 domain:opencollective.com
 domain:opencreate.org
 domain:opencritic.com
