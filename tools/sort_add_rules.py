@@ -1,24 +1,13 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import ipaddress
 from pathlib import Path
-from typing import Any
 
 from rule_files import discover_addition_files
+from rule_sort import RULE_TYPE_ORDER, sort_and_dedupe_rules
 
 ROOT = Path(__file__).resolve().parents[1]
 COMMENT_PREFIXES = ("#", ";", "//")
-RULE_TYPE_ORDER = {
-    "DOMAIN": 0,
-    "DOMAIN-SUFFIX": 1,
-    "DOMAIN-KEYWORD": 2,
-    "IP-CIDR": 3,
-    "IP-CIDR6": 4,
-    "IP-ASN": 5,
-}
-
-
 def normalize_rule(raw: str, path: Path, line_number: int) -> str:
     parts = [part.strip() for part in raw.strip().split(",")]
     kind = parts[0].upper()
@@ -35,34 +24,6 @@ def normalize_rule(raw: str, path: Path, line_number: int) -> str:
         )
 
     return ",".join((kind, *parts[1:]))
-
-
-def value_sort_key(kind: str, value: str) -> tuple[Any, ...]:
-    if kind in {"IP-CIDR", "IP-CIDR6"}:
-        try:
-            network = ipaddress.ip_network(value, strict=False)
-        except ValueError:
-            return (1, value.casefold())
-        return (0, network.version, int(network.network_address), network.prefixlen)
-
-    if kind == "IP-ASN":
-        asn = value.upper().removeprefix("AS")
-        try:
-            return (0, int(asn))
-        except ValueError:
-            return (1, value.casefold())
-
-    return (0, value.casefold())
-
-
-def rule_sort_key(rule: str) -> tuple[Any, ...]:
-    kind, value, *extra = rule.split(",")
-    return (
-        RULE_TYPE_ORDER[kind],
-        value_sort_key(kind, value),
-        tuple(part.casefold() for part in extra),
-        rule.casefold(),
-    )
 
 
 def sort_add_file(path: Path) -> bool:
@@ -94,7 +55,8 @@ def sort_add_file(path: Path) -> bool:
     output = list(header)
     if output and rules:
         output.append("")
-    output.extend(sorted(rules, key=rule_sort_key))
+    ordered_rules = sort_and_dedupe_rules(rules)
+    output.extend(ordered_rules)
     if trailing_comments:
         if output:
             output.append("")
@@ -106,7 +68,7 @@ def sort_add_file(path: Path) -> bool:
         return False
 
     path.write_text(rendered, encoding="utf-8")
-    print(f"[sorted] {path.relative_to(ROOT)} ({len(rules)} rules)")
+    print(f"[sorted] {path.relative_to(ROOT)} ({len(ordered_rules)} unique rules)")
     return True
 
 

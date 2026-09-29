@@ -10,6 +10,8 @@ on:
     paths:
       - "tools/sort_add_rules.py"
       - "tools/rule_files.py"
+      - "tools/rule_sort.py"
+      - "tools/check_rule_order.py"
       - "tools/build_rules.py"
       - "tools/build_dist_manifest.py"
       - "tools/fetch_geox.py"
@@ -47,6 +49,9 @@ jobs:
 
       - name: Build consolidated rule files
         run: python3 tools/build_rules.py
+
+      - name: Verify deterministic rule ordering
+        run: python3 tools/check_rule_order.py
 
       - name: Download GeoX assets
         run: python3 tools/fetch_geox.py

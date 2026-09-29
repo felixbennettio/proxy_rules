@@ -4,9 +4,6 @@
 # DOMAIN -> full:, DOMAIN-SUFFIX -> domain:, DOMAIN-KEYWORD -> keyword:.
 # IP rules are intentionally omitted because OxiDNS domain_set matches qname only.
 
-domain:cc98.org
-domain:scezju.com
-domain:zju.edu.cn
 domain:aaiddjournals.org
 domain:accessmedicine.com
 domain:accesssurgery.com
@@ -24,8 +21,8 @@ domain:allenpress.com
 domain:amamanualofstyle.com
 domain:ametsoc.org
 domain:amjbot.org
-domain:ams.org
 domain:ams.mpim-bonn.mpg.de
+domain:ams.org
 domain:ams2.math.uni-bielefeld.de
 domain:anatomy.tv
 domain:ancientbooks.cn
@@ -62,6 +59,7 @@ domain:cairn.info
 domain:calis.edu.cn
 domain:cambridge.org
 domain:cas.org
+domain:cc98.org
 domain:ccdc.cam.ac.uk
 domain:ceicdata.com
 domain:cell.com
@@ -206,8 +204,8 @@ domain:pqdtcn.com
 domain:primalonlinelearning.com
 domain:proceduresconsult.com
 domain:proquest.com
-domain:pubs.nrc-cnrc.gc.ca
 domain:publish.csiro.au
+domain:pubs.nrc-cnrc.gc.ca
 domain:qikan.com
 domain:rarelit.net
 domain:reaxys.com
@@ -219,11 +217,12 @@ domain:rsnajnls.org
 domain:rupress.org
 domain:sae.org
 domain:sagepub.com
+domain:scezju.com
 domain:scholarlyiq.com
+domain:science.org
 domain:sciencedirect.com
 domain:sciencedirectassets.com
 domain:sciencemag.org
-domain:science.org
 domain:sciencereading.cn
 domain:scijournals.org
 domain:scitation.org
@@ -282,4 +281,5 @@ domain:xsearch.asahi.com
 domain:yiigle.com
 domain:yunpub.cn
 domain:zhihuiya.com
+domain:zju.edu.cn
 domain:zlzx.org

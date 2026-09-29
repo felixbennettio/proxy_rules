@@ -36,6 +36,16 @@ another. A dynamically added set without a configured priority is generated
 unchanged; add its name to `RULE_PRIORITIES.json` to include it in cross-set
 deduplication.
 
+Every generated canonical list and every `_add.list` file is deduplicated and
+sorted deterministically. Rules are grouped in this order:
+
+```text
+DOMAIN → DOMAIN-SUFFIX → DOMAIN-KEYWORD → IP-CIDR → IP-CIDR6 → IP-ASN
+```
+
+Within each type, domain and keyword values are sorted alphabetically without
+case sensitivity. IP networks and ASNs are sorted numerically.
+
 Manual override files:
 
 ```text
