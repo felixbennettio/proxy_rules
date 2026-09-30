@@ -10995,6 +10995,7 @@ domain:fututrustee.com
 domain:fux.com
 domain:fuxporn.com
 domain:fuyin.net
+domain:fuyin116.com
 domain:fuyindiantai.org
 domain:fuyu.org.tw
 domain:fuzokudx.com
@@ -25354,6 +25355,7 @@ domain:tok.media
 domain:token.im
 domain:tokenlon.im
 domain:tokenplus.app
+domain:tokens.ci
 domain:tokto-motion.net
 domain:tokyo-247.com
 domain:tokyo-hot.com
