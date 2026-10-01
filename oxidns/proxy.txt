@@ -4737,6 +4737,7 @@ domain:blogger.com
 domain:bloggrowup.com
 domain:blogimg.jp
 domain:blogjav.net
+domain:bloglovin.com
 domain:blogoverflow.com
 domain:blogs.com
 domain:blogs.tampabay.com
@@ -4806,8 +4807,10 @@ domain:blogspot.ru
 domain:blogspot.se
 domain:blogspot.sg
 domain:blogspot.si
+domain:blogspot.sk
 domain:blogspot.sn
 domain:blogspot.td
+domain:blogspot.tw
 domain:blogspot.ug
 domain:blogspot.vn
 domain:blogtd.net
@@ -5291,6 +5294,7 @@ domain:bnews.co
 domain:bnext.com.tw
 domain:bnn.co
 domain:bnrmetal.com
+domain:bntrace.com
 domain:bnxz.net
 domain:boardreader.com
 domain:boboporn.com
@@ -7441,6 +7445,7 @@ domain:dastanhisexy.cc
 domain:dastrassi.org
 domain:dat.foundation
 domain:data-tscbank.ru
+domain:data-vocabulary.org
 domain:data.com
 domain:data18.com
 domain:datacloudmy.com
@@ -7863,6 +7868,7 @@ domain:dgwav.com
 domain:dh44.lol
 domain:dharamsalanet.com
 domain:dharmakara.net
+domain:dhcp.biz
 domain:dhlestudio.com.co
 domain:diablo.com
 domain:diablo3.com
@@ -10769,6 +10775,7 @@ domain:freesexyindians.org
 domain:freess.org
 domain:freessh.us
 domain:freessl.com
+domain:freetcp.com
 domain:freeterabox.com
 domain:freetibet.net
 domain:freetibet.org
@@ -14621,6 +14628,7 @@ domain:is-a-hunter.com
 domain:is.gd
 domain:isaacmao.com
 domain:isafepal.com
+domain:isasecret.com
 domain:isbgpsafeyet.com
 domain:isc.sans.edu
 domain:isca-speech.org
@@ -15115,6 +15123,7 @@ domain:jkbeats.com
 domain:jkf.net
 domain:jkface.net
 domain:jkforum.net
+domain:jkub.com
 domain:jkycjk.mom
 domain:jkzvz.shop
 domain:jkzw.shop
@@ -15907,7 +15916,9 @@ domain:lexuemei.com
 domain:lezpoo.com
 domain:lfai.foundation
 domain:lflink.com
+domain:lflinkup.com
 domain:lflinkup.net
+domain:lflinkup.org
 domain:lfpcontent.com
 domain:lg.com
 domain:lgappstv.com
@@ -19627,6 +19638,7 @@ domain:onedrive.eu
 domain:onedrive.live.com
 domain:onedrive.net
 domain:onedrive.org
+domain:onedumb.com
 domain:onefifteen.net
 domain:onefifteen.org
 domain:onejapanese.com
@@ -23911,6 +23923,7 @@ domain:ssl-certificate.ch
 domain:ssl-images-amazon.com
 domain:ssl.com
 domain:ssl.webpack.de
+domain:ssl443.org
 domain:sslpaypal.org
 domain:sspanel.net
 domain:sspanel.org
@@ -25562,6 +25575,7 @@ domain:trezor.io
 domain:trialofccp.org
 domain:triballo.net
 domain:tribler.org
+domain:trickip.net
 domain:trikepatrol.com
 domain:trimondi.de
 domain:triokini.com

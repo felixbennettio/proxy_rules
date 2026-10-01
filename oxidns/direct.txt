@@ -5058,6 +5058,7 @@ domain:515ppt.com
 domain:51643.com
 domain:51656582.com
 domain:51658042.com
+domain:5166.info
 domain:51661182.com
 domain:5166ys.com
 domain:516ly.com
@@ -13114,7 +13115,6 @@ domain:awcn.cc
 domain:awehunt.com
 domain:awemeughun.com
 domain:awemeuglang.com
-domain:awemeugsoul.com
 domain:awemeugwave.com
 domain:aweray.com
 domain:awesome-hd.me
@@ -13920,6 +13920,7 @@ domain:baka.im
 domain:baka.plus
 domain:bakapiano.com
 domain:bakaxl.com
+domain:bakbitionb.com
 domain:bakclass.com
 domain:bakingerp.com
 domain:baklib.com
@@ -31329,6 +31330,7 @@ domain:edgeone-ai.com
 domain:edgeone-browser-rendering-dev.com
 domain:edgeone-browser-rendering.com
 domain:edgeone.ai
+domain:edgeone.app
 domain:edgeone.cool
 domain:edgeone.run
 domain:edgeone.site
@@ -60850,7 +60852,6 @@ domain:llyyx.com
 domain:llzg.com
 domain:llzxedu.net
 domain:lm263.com
-domain:lm335.com
 domain:lm9999.com
 domain:lmacc.com
 domain:lmanmo.com
@@ -81036,6 +81037,7 @@ domain:simglo.com
 domain:simhaoka.com
 domain:simiam.com
 domain:simici3.com
+domain:simicloud.com
 domain:simiki.org
 domain:simingkuai.com
 domain:simingtang.com
@@ -88014,6 +88016,7 @@ domain:tongdaotv.com
 domain:tongdayun.com
 domain:tongdelove.com
 domain:tongdinggroup.com
+domain:tongdun.net
 domain:tongdy.com
 domain:tongfangpc.com
 domain:tongfei.tech
@@ -90068,6 +90071,7 @@ domain:umfintech.com
 domain:umgg.biz
 domain:umihome.com
 domain:umindex.com
+domain:umiwi.com
 domain:umiwx.com
 domain:umjicanvas.com
 domain:uml-tech.com
