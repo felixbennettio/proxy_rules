@@ -13115,6 +13115,7 @@ domain:awcn.cc
 domain:awehunt.com
 domain:awemeughun.com
 domain:awemeuglang.com
+domain:awemeugsoul.com
 domain:awemeugwave.com
 domain:aweray.com
 domain:awesome-hd.me
@@ -13920,7 +13921,6 @@ domain:baka.im
 domain:baka.plus
 domain:bakapiano.com
 domain:bakaxl.com
-domain:bakbitionb.com
 domain:bakclass.com
 domain:bakingerp.com
 domain:baklib.com
@@ -31330,7 +31330,6 @@ domain:edgeone-ai.com
 domain:edgeone-browser-rendering-dev.com
 domain:edgeone-browser-rendering.com
 domain:edgeone.ai
-domain:edgeone.app
 domain:edgeone.cool
 domain:edgeone.run
 domain:edgeone.site
@@ -69895,7 +69894,6 @@ domain:osgz.com
 domain:oshadan.com
 domain:oshield.com
 domain:oshome.com
-domain:oshoplive.com
 domain:oshwhub.com
 domain:osicgroup.com
 domain:osjiaju.com
@@ -81037,7 +81035,6 @@ domain:simglo.com
 domain:simhaoka.com
 domain:simiam.com
 domain:simici3.com
-domain:simicloud.com
 domain:simiki.org
 domain:simingkuai.com
 domain:simingtang.com
@@ -88016,7 +88013,6 @@ domain:tongdaotv.com
 domain:tongdayun.com
 domain:tongdelove.com
 domain:tongdinggroup.com
-domain:tongdun.net
 domain:tongdy.com
 domain:tongfangpc.com
 domain:tongfei.tech
@@ -90071,7 +90067,6 @@ domain:umfintech.com
 domain:umgg.biz
 domain:umihome.com
 domain:umindex.com
-domain:umiwi.com
 domain:umiwx.com
 domain:umjicanvas.com
 domain:uml-tech.com
@@ -90878,7 +90873,6 @@ domain:veew-alb-ts.com
 domain:vefast-fa.com
 domain:veg520.com
 domain:vegalb.com
-domain:vegslb.com
 domain:vegtm.net
 domain:veicplive.com
 domain:veigagslb.com
@@ -91533,7 +91527,6 @@ domain:volcproxy.net
 domain:volcsdns-test.com
 domain:volcsdns.com
 domain:volcsdns.net
-domain:volcsirius.com
 domain:volcsiriusbd.com
 domain:volcspaceeduc.com
 domain:volcstack.com

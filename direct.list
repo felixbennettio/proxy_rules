@@ -13113,6 +13113,7 @@ DOMAIN-SUFFIX,awcn.cc
 DOMAIN-SUFFIX,awehunt.com
 DOMAIN-SUFFIX,awemeughun.com
 DOMAIN-SUFFIX,awemeuglang.com
+DOMAIN-SUFFIX,awemeugsoul.com
 DOMAIN-SUFFIX,awemeugwave.com
 DOMAIN-SUFFIX,aweray.com
 DOMAIN-SUFFIX,awesome-hd.me
@@ -13918,7 +13919,6 @@ DOMAIN-SUFFIX,baka.im
 DOMAIN-SUFFIX,baka.plus
 DOMAIN-SUFFIX,bakapiano.com
 DOMAIN-SUFFIX,bakaxl.com
-DOMAIN-SUFFIX,bakbitionb.com
 DOMAIN-SUFFIX,bakclass.com
 DOMAIN-SUFFIX,bakingerp.com
 DOMAIN-SUFFIX,baklib.com
@@ -31328,7 +31328,6 @@ DOMAIN-SUFFIX,edgeone-ai.com
 DOMAIN-SUFFIX,edgeone-browser-rendering-dev.com
 DOMAIN-SUFFIX,edgeone-browser-rendering.com
 DOMAIN-SUFFIX,edgeone.ai
-DOMAIN-SUFFIX,edgeone.app
 DOMAIN-SUFFIX,edgeone.cool
 DOMAIN-SUFFIX,edgeone.run
 DOMAIN-SUFFIX,edgeone.site
@@ -69893,7 +69892,6 @@ DOMAIN-SUFFIX,osgz.com
 DOMAIN-SUFFIX,oshadan.com
 DOMAIN-SUFFIX,oshield.com
 DOMAIN-SUFFIX,oshome.com
-DOMAIN-SUFFIX,oshoplive.com
 DOMAIN-SUFFIX,oshwhub.com
 DOMAIN-SUFFIX,osicgroup.com
 DOMAIN-SUFFIX,osjiaju.com
@@ -81035,7 +81033,6 @@ DOMAIN-SUFFIX,simglo.com
 DOMAIN-SUFFIX,simhaoka.com
 DOMAIN-SUFFIX,simiam.com
 DOMAIN-SUFFIX,simici3.com
-DOMAIN-SUFFIX,simicloud.com
 DOMAIN-SUFFIX,simiki.org
 DOMAIN-SUFFIX,simingkuai.com
 DOMAIN-SUFFIX,simingtang.com
@@ -88014,7 +88011,6 @@ DOMAIN-SUFFIX,tongdaotv.com
 DOMAIN-SUFFIX,tongdayun.com
 DOMAIN-SUFFIX,tongdelove.com
 DOMAIN-SUFFIX,tongdinggroup.com
-DOMAIN-SUFFIX,tongdun.net
 DOMAIN-SUFFIX,tongdy.com
 DOMAIN-SUFFIX,tongfangpc.com
 DOMAIN-SUFFIX,tongfei.tech
@@ -90069,7 +90065,6 @@ DOMAIN-SUFFIX,umfintech.com
 DOMAIN-SUFFIX,umgg.biz
 DOMAIN-SUFFIX,umihome.com
 DOMAIN-SUFFIX,umindex.com
-DOMAIN-SUFFIX,umiwi.com
 DOMAIN-SUFFIX,umiwx.com
 DOMAIN-SUFFIX,umjicanvas.com
 DOMAIN-SUFFIX,uml-tech.com
@@ -90876,7 +90871,6 @@ DOMAIN-SUFFIX,veew-alb-ts.com
 DOMAIN-SUFFIX,vefast-fa.com
 DOMAIN-SUFFIX,veg520.com
 DOMAIN-SUFFIX,vegalb.com
-DOMAIN-SUFFIX,vegslb.com
 DOMAIN-SUFFIX,vegtm.net
 DOMAIN-SUFFIX,veicplive.com
 DOMAIN-SUFFIX,veigagslb.com
@@ -91531,7 +91525,6 @@ DOMAIN-SUFFIX,volcproxy.net
 DOMAIN-SUFFIX,volcsdns-test.com
 DOMAIN-SUFFIX,volcsdns.com
 DOMAIN-SUFFIX,volcsdns.net
-DOMAIN-SUFFIX,volcsirius.com
 DOMAIN-SUFFIX,volcsiriusbd.com
 DOMAIN-SUFFIX,volcspaceeduc.com
 DOMAIN-SUFFIX,volcstack.com
@@ -109788,6 +109781,7 @@ IP-CIDR,14.134.0.0/15
 IP-CIDR,14.144.0.0/12
 IP-CIDR,14.204.0.0/15
 IP-CIDR,14.208.0.0/12
+IP-CIDR,14.241.232.0/21
 IP-CIDR,14.255.16.0/24
 IP-CIDR,14.255.238.0/24
 IP-CIDR,14.255.254.0/24
@@ -109973,7 +109967,7 @@ IP-CIDR,43.231.170.0/24
 IP-CIDR,43.239.120.0/22
 IP-CIDR,43.239.172.0/23
 IP-CIDR,43.240.0.0/22
-IP-CIDR,43.240.56.0/21
+IP-CIDR,43.240.60.0/22
 IP-CIDR,43.240.72.0/22
 IP-CIDR,43.240.124.0/22
 IP-CIDR,43.240.128.0/22
@@ -112969,6 +112963,8 @@ IP-CIDR,203.174.4.0/24
 IP-CIDR,203.174.96.0/19
 IP-CIDR,203.175.128.0/19
 IP-CIDR,203.176.92.0/22
+IP-CIDR,203.176.168.0/24
+IP-CIDR,203.176.170.0/24
 IP-CIDR,203.187.160.0/19
 IP-CIDR,203.189.0.0/23
 IP-CIDR,203.189.6.0/23
