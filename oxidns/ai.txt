@@ -68,6 +68,7 @@ domain:chat.com
 domain:chatgpt.com
 domain:chatgpt.livekit.cloud
 domain:chatgpt.site
+domain:clau.de
 domain:claude.ai
 domain:claude.com
 domain:claudeusercontent.com

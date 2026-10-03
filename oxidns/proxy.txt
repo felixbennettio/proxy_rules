@@ -6662,7 +6662,6 @@ domain:clasporno.org
 domain:classicalguitarblog.net
 domain:classicnike.com
 domain:classymomsex.com
-domain:clau.de
 domain:clawhub.ai
 domain:clb.org.hk
 domain:clco.cc
@@ -27780,6 +27779,7 @@ domain:wikiquote.org
 domain:wikis.tw
 domain:wikisexguide.com
 domain:wikisource.org
+domain:wikispecies.org
 domain:wikissl.com
 domain:wikiunblocked.org
 domain:wikiversity.org
