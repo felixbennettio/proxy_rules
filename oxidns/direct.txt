@@ -5058,7 +5058,6 @@ domain:515ppt.com
 domain:51643.com
 domain:51656582.com
 domain:51658042.com
-domain:5166.info
 domain:51661182.com
 domain:5166ys.com
 domain:516ly.com
@@ -7474,7 +7473,6 @@ domain:75n474.com
 domain:75pk.com
 domain:75team.com
 domain:75txt.com
-domain:75ww.com
 domain:76120.org
 domain:7618.com
 domain:76474cf781f10d61.com
@@ -72407,6 +72405,7 @@ domain:q-dazzle.com
 domain:q-parking.com
 domain:q-supreme.com
 domain:q.biz
+domain:q1.com
 domain:q1cm.com
 domain:q2ak.com
 domain:q2cdn.com
@@ -106789,6 +106788,7 @@ domain:zhongguanpetro.com
 domain:zhongguinong.com
 domain:zhongguobaiyin.com
 domain:zhongguobingxue.com
+domain:zhongguociwang.com
 domain:zhongguoditu.com
 domain:zhongguofeng.com
 domain:zhongguogouliang.com
