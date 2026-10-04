@@ -14,7 +14,17 @@ push.list
 proxy.list
 direct.list
 reject.list
+stream.list
 ```
+
+`stream.list` is the streaming-media subset built from the same upstreams that
+feed `proxy.list`. It has no entry in `RULE_PRIORITIES.json`, so it does not
+remove anything from `proxy.list`; clients place it before `proxy.list` to send
+streaming traffic to a dedicated group.
+
+Custom file-based sets: `zju.list` (campus routing) and `download.list`
+(bulk-download hosts that clients load-balance across nodes). Every
+`download.list` entry is also covered by `proxy.list`.
 
 `ai.list` merges and deduplicates focused AI rules from blackmatrix7,
 ACL4SSR, Repcz, and SukkaW. `push.list` keeps the Xiaomi, Huawei, OPPO,

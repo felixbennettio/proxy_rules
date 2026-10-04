@@ -75,6 +75,26 @@ SOURCES = {
         "https://ruleset.skk.moe/List/non_ip/stream_tw.conf",
         "https://ruleset.skk.moe/List/ip/stream_tw.conf",
     ],
+    "stream": [
+        # Streaming-media subset, sourced from the same upstreams merged into
+        # proxy. Not listed in RULE_PRIORITIES.json, so proxy.list is unchanged;
+        # clients can route this set to a dedicated streaming group.
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GlobalMedia/GlobalMedia.list",
+        "https://ruleset.skk.moe/List/non_ip/stream.conf",
+        "https://ruleset.skk.moe/List/ip/stream.conf",
+        "https://ruleset.skk.moe/List/non_ip/stream_us.conf",
+        "https://ruleset.skk.moe/List/ip/stream_us.conf",
+        "https://ruleset.skk.moe/List/non_ip/stream_eu.conf",
+        "https://ruleset.skk.moe/List/ip/stream_eu.conf",
+        "https://ruleset.skk.moe/List/non_ip/stream_jp.conf",
+        "https://ruleset.skk.moe/List/ip/stream_jp.conf",
+        "https://ruleset.skk.moe/List/non_ip/stream_kr.conf",
+        "https://ruleset.skk.moe/List/ip/stream_kr.conf",
+        "https://ruleset.skk.moe/List/non_ip/stream_hk.conf",
+        "https://ruleset.skk.moe/List/ip/stream_hk.conf",
+        "https://ruleset.skk.moe/List/non_ip/stream_tw.conf",
+        "https://ruleset.skk.moe/List/ip/stream_tw.conf",
+    ],
     "direct": [
         # Apple / China / direct / LAN
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list",
@@ -480,6 +500,7 @@ def main() -> int:
         "reject": "Consolidated reject rules",
         "proxy": "Consolidated proxy/global rules",
         "direct": "Consolidated direct/domestic rules",
+        "stream": "Consolidated streaming-media rules",
     }
 
     # A custom canonical file is its own persistent base. Its matching additions
