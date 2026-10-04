@@ -20,6 +20,7 @@
     "oxidns/push_add.txt",
     "oxidns/reject.txt",
     "oxidns/reject_add.txt",
+    "oxidns/stream.txt",
     "oxidns/zju.txt",
     "proxy.list",
     "proxy_add.list",
@@ -27,6 +28,7 @@
     "push_add.list",
     "reject.list",
     "reject_add.list",
+    "stream.list",
     "zju.list"
   ]
 }
