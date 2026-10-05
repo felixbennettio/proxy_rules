@@ -7473,6 +7473,7 @@ domain:75n474.com
 domain:75pk.com
 domain:75team.com
 domain:75txt.com
+domain:75ww.com
 domain:76120.org
 domain:7618.com
 domain:76474cf781f10d61.com
@@ -90871,7 +90872,6 @@ domain:veew-alb-ts.com
 domain:vefast-fa.com
 domain:veg520.com
 domain:vegalb.com
-domain:vegslb.com
 domain:vegtm.net
 domain:veicplive.com
 domain:veigagslb.com
