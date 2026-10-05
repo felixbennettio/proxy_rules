@@ -9,6 +9,7 @@ The repository provides portable rule lists, generated OxiDNS domain sets, and m
 Generated rule files:
 
 ```text
+allow.list
 ai.list
 push.list
 proxy.list
@@ -35,7 +36,7 @@ Cross-set deduplication is controlled by `RULE_PRIORITIES.json`. Larger numbers
 have higher priority. The default order is:
 
 ```text
-AI (500) > mobile push (400) > reject (300) > generic proxy (200) > generic direct (100)
+allow exceptions (600) > AI (500) > mobile push (400) > reject (300) > generic proxy (200) > generic direct (100)
 ```
 
 Duplicate rules, and lower-priority rules fully covered by a higher-priority
@@ -59,6 +60,7 @@ case sensitivity. IP networks and ASNs are sorted numerically.
 Manual override files:
 
 ```text
+allow_add.list
 ai_add.list
 push_add.list
 proxy_add.list
@@ -69,6 +71,20 @@ reject_add.list
 Every manual addition is merged into its same-name canonical file. For example,
 rules in `ai_add.list` become part of `ai.list`; clients only need to reference
 `ai.list`.
+
+`allow_add.list` contains explicit exceptions for services incorrectly blocked
+by upstream lists. These exceptions take priority over the other configured
+sets, so covered reject entries are removed from both `reject.list` and
+`oxidns/reject.txt` on every rebuild. `allow.list` is rebuilt from
+`allow_add.list` only; removing an exception there removes its protection on
+the next rebuild.
+
+The initial exceptions allow the NetEase Yidun CAPTCHA loader and anti-cheat
+hosts required by the copyright registration login page. Their parent domains
+are already covered by `direct.list` and `oxidns/direct.txt`, so existing
+clients can use the fix by refreshing their current rule subscriptions.
+Clients can also load `allow.list` with a direct policy, or `oxidns/allow.txt`
+with their normal DNS upstream, before reject rules.
 
 Rule-set names are discovered automatically; `rule10` is only an example, not a
 fixed name. Adding any `<name>.list` creates its OxiDNS output and distribution

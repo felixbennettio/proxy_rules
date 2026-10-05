@@ -2,6 +2,7 @@
   "schema_version": 1,
   "description": "Larger numbers have higher priority. Equal priorities do not deduplicate each other.",
   "priorities": {
+    "allow": 600,
     "ai": 500,
     "push": 400,
     "reject": 300,

@@ -4,6 +4,8 @@
   "files": [
     "ai.list",
     "ai_add.list",
+    "allow.list",
+    "allow_add.list",
     "direct.list",
     "direct_add.list",
     "download.list",
@@ -11,6 +13,8 @@
     "geox/geosite.dat",
     "oxidns/ai.txt",
     "oxidns/ai_add.txt",
+    "oxidns/allow.txt",
+    "oxidns/allow_add.txt",
     "oxidns/direct.txt",
     "oxidns/direct_add.txt",
     "oxidns/download.txt",

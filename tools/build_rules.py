@@ -28,6 +28,8 @@ IGNORED_SOURCE_MARKERS = {
 # here. Any matching *_add.list is merged into the canonical
 # output. Rule-set names not listed here are discovered from repository files.
 SOURCES = {
+    # Explicit allow exceptions are rebuilt only from allow_add.list.
+    "allow": [],
     "ai": [
         # Merge focused AI rules from several independently maintained projects.
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list",
@@ -471,6 +473,7 @@ def write_oxidns_rules(path: Path, title: str, rules: list[str]) -> None:
 
 def ensure_add_files() -> None:
     templates = {
+        "allow_add.list": "# Manual allow exceptions. One portable classical rule per line.\n",
         "ai_add.list": "# Manual AI rules. One portable classical rule per line.\n",
         "push_add.list": "# Manual vendor-push rules. One portable classical rule per line.\n",
         "proxy_add.list": "# Manual proxy rules. One portable classical rule per line.\n",
@@ -495,6 +498,7 @@ def main() -> int:
         for name in SOURCES
     }
     titles = {
+        "allow": "Explicit allow exceptions",
         "ai": "Consolidated AI rules",
         "push": "Consolidated mobile-vendor push/service rules",
         "reject": "Consolidated reject rules",

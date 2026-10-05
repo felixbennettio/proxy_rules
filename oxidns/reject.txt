@@ -13725,8 +13725,6 @@ domain:ac.art456.com
 domain:ac.atpanel.com
 domain:ac.berlinonline.de
 domain:ac.conel.jp
-domain:ac.dun.163.com
-domain:ac.dun.163yun.com
 domain:ac.ecai-report.com
 domain:ac.express.de
 domain:ac.fapnado.xxx
@@ -75335,7 +75333,6 @@ domain:cst.maracarol.it
 domain:cstarcom.com
 domain:cstasa.ca
 domain:cstat.nextel.com.ua
-domain:cstaticdun.126.net
 domain:cstats.sankakucomplex.com
 domain:cstfzgckbtrb.com
 domain:cstm.baidu.com
