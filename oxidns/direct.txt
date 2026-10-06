@@ -7473,7 +7473,6 @@ domain:75n474.com
 domain:75pk.com
 domain:75team.com
 domain:75txt.com
-domain:75ww.com
 domain:76120.org
 domain:7618.com
 domain:76474cf781f10d61.com
@@ -72406,7 +72405,6 @@ domain:q-dazzle.com
 domain:q-parking.com
 domain:q-supreme.com
 domain:q.biz
-domain:q1.com
 domain:q1cm.com
 domain:q2ak.com
 domain:q2cdn.com
@@ -90872,6 +90870,7 @@ domain:veew-alb-ts.com
 domain:vefast-fa.com
 domain:veg520.com
 domain:vegalb.com
+domain:vegslb.com
 domain:vegtm.net
 domain:veicplive.com
 domain:veigagslb.com
@@ -106788,7 +106787,6 @@ domain:zhongguanpetro.com
 domain:zhongguinong.com
 domain:zhongguobaiyin.com
 domain:zhongguobingxue.com
-domain:zhongguociwang.com
 domain:zhongguoditu.com
 domain:zhongguofeng.com
 domain:zhongguogouliang.com
