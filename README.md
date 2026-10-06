@@ -2,7 +2,7 @@
 
 `proxy_rules` is a consolidated proxy-rule repository for Surge, mihomo, Egern, Loon, OxiDNS, and other clients that consume remote rule lists.
 
-The repository provides portable rule lists, generated OxiDNS domain sets, and mirrored GeoX assets. Client configurations should reference this repository instead of depending on many upstream sources directly.
+The repository provides portable rule lists, Surge DNS mapping lists, OxiDNS domain sets, and mirrored GeoX assets. Client configurations should reference this repository instead of depending on many upstream sources directly.
 
 ## Canonical client files
 
@@ -87,11 +87,41 @@ Clients can also load `allow.list` with a direct policy, or `oxidns/allow.txt`
 with their normal DNS upstream, before reject rules.
 
 Rule-set names are discovered automatically; `rule10` is only an example, not a
-fixed name. Adding any `<name>.list` creates its OxiDNS output and distribution
+fixed name. Adding any `<name>.list` creates its Surge DNS and OxiDNS outputs and distribution
 entry. Adding any `<name>_add.list` also creates or updates `<name>.list` and
 merges those additions. No workflow allow-list needs to be edited. For
 upstream-backed built-in sets, put custom rules in the `_add.list` file instead
 of editing the generated canonical file directly.
+
+## Surge DNS mapping files
+
+Use root-level lists such as `direct.list` and `proxy.list` in Surge's `[Rule]`
+section. They retain all domain and IP rules for traffic routing.
+
+Use `dns/<name>.list` in `[Host]` to choose a DNS server by domain. These lists
+contain only `DOMAIN`, `DOMAIN-SUFFIX`, and `DOMAIN-KEYWORD` rules, so DNS mapping
+does not depend on resolving an IP address first. Reference them as `RULE-SET`,
+not `DOMAIN-SET`, to preserve keyword matching.
+
+```ini
+[Rule]
+RULE-SET,https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/proxy.list,Proxy
+RULE-SET,https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/direct.list,DIRECT
+FINAL,Proxy
+
+[Host]
+RULE-SET:https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/dns/direct.list = server:https://dns.alidns.com/dns-query
+RULE-SET:https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/dns/proxy.list = server:https://dns.google/dns-query
+```
+
+The example assumes a policy named `Proxy`; use your own policies and DNS
+servers. `[Host]` controls Surge's local DNS lookups; proxied connections may
+still resolve names on the proxy server.
+
+Every canonical list automatically gets a matching DNS list after the same
+priority and deduplication rules are applied. Continue editing `<name>_add.list`;
+there is no second list to maintain. Daily builds verify that DNS lists contain
+exactly the canonical domain rules, then publish both versions together.
 
 ## OxiDNS files
 

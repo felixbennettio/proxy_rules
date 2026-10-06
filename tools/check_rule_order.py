@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from build_rules import read_local_rules, to_oxidns_domain_set
+from build_rules import read_local_rules, to_oxidns_domain_set, to_surge_dns_rules
 from rule_files import discover_addition_files, discover_rule_names
 from rule_sort import sort_and_dedupe_rules
 
@@ -24,6 +24,12 @@ def check_canonical(name: str) -> None:
     rules = read_local_rules(path)
     if rules != sort_and_dedupe_rules(rules):
         raise ValueError(f"{path.name} is not sorted and deduplicated")
+
+    surge_dns_path = ROOT / "dns" / f"{name}.list"
+    if data_lines(surge_dns_path) != to_surge_dns_rules(rules):
+        raise ValueError(
+            f"{surge_dns_path.relative_to(ROOT)} must contain exactly the canonical domain rules"
+        )
 
     expected_dns: list[str] = []
     seen_dns: set[str] = set()
