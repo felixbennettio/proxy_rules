@@ -16949,12 +16949,14 @@ domain:megalodon.jp
 domain:megamarket.ru
 domain:megamarket.tech
 domain:megamon.co.kr
+domain:megapay.nz
 domain:megaphone.fm
 domain:megapornfreehd.com
 domain:megaporno.com.br
 domain:megapornpics.com
 domain:megaproxy.com
 domain:megarotic.com
+domain:megas4.com
 domain:megasrv.de
 domain:megatitsminka.com
 domain:megaupload.com
@@ -22915,6 +22917,7 @@ domain:sexoquente.blog
 domain:sexpornimg.com
 domain:sexpornpictures.com
 domain:sexpornvideoasian.com
+domain:sexsaoy.com
 domain:sexsex1.com
 domain:sexsiam.com
 domain:sexsim.com
@@ -25538,6 +25541,7 @@ domain:trans500.com
 domain:transangels.com
 domain:transarmuito.com
 domain:transcamslive.com
+domain:transfer.it
 domain:transferwise.com
 domain:translate.goog
 domain:translatetheweb.com
