@@ -3082,6 +3082,7 @@ domain:applw.com
 domain:appmedia.jp
 domain:appmediagroup.com
 domain:approvedusedbmw.com
+domain:approveit.today
 domain:apps.evozi.com
 domain:appshopper.com
 domain:appsmail.ru
@@ -8223,7 +8224,6 @@ domain:dnsserver1.de
 domain:dnsserver2.de
 domain:dnsvisa.com
 domain:do.co
-domain:dobbyporn.com
 domain:dobendan.de
 domain:doc.new
 domain:doceapower.com
@@ -24367,6 +24367,7 @@ domain:surrenderat20.net
 domain:suruga-ya.com
 domain:suruga-ya.jp
 domain:surugabank.co.jp
+domain:surveymonkey.com
 domain:sushi.ski
 domain:susiewildin.com
 domain:sustainablebuildingstudio.com
@@ -26419,6 +26420,7 @@ domain:vanithaveedu.com
 domain:vanityfair.com
 domain:vanpeople.com
 domain:vansky.com
+domain:vanta.com
 domain:vastenm.com
 domain:vaticannews.va
 domain:vatn.org
