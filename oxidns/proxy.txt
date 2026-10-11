@@ -10208,6 +10208,7 @@ domain:financialexpress.com
 domain:financialsoccer.ca
 domain:finchvpn.com
 domain:fincode.jp
+domain:find-a.jp
 domain:find-apple.com
 domain:findacard.com
 domain:findagrave.com
@@ -15336,6 +15337,7 @@ domain:juziyue.com
 domain:jvid.com
 domain:jwide.co.kr
 domain:jwmusic.org
+domain:jword.jp
 domain:jwplatform.com
 domain:jwplayer.com
 domain:jwpsrv.com
