@@ -34,6 +34,7 @@ DOMAIN,gateway.bingviz.microsoftapp.net
 DOMAIN,gemini.google.com
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN,in.appcenter.ms
+DOMAIN,inference.codeium.com
 DOMAIN,jules.google.com
 DOMAIN,location.microsoft.com
 DOMAIN,makersuite.google.com
@@ -47,6 +48,8 @@ DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,r.bing.com
 DOMAIN,robinfrontend-pa.googleapis.com
 DOMAIN,self.events.data.microsoft.com
+DOMAIN,server.codeium.com
+DOMAIN,server.self-serve.windsurf.com
 DOMAIN,services.bingapis.com
 DOMAIN,static.cloudflareinsights.com
 DOMAIN,sydney.bing.com

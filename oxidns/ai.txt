@@ -35,6 +35,7 @@ full:gateway.bingviz.microsoftapp.net
 full:gemini.google.com
 full:generativelanguage.googleapis.com
 full:in.appcenter.ms
+full:inference.codeium.com
 full:jules.google.com
 full:location.microsoft.com
 full:makersuite.google.com
@@ -48,6 +49,8 @@ full:production-openaicom-storage.azureedge.net
 full:r.bing.com
 full:robinfrontend-pa.googleapis.com
 full:self.events.data.microsoft.com
+full:server.codeium.com
+full:server.self-serve.windsurf.com
 full:services.bingapis.com
 full:static.cloudflareinsights.com
 full:sydney.bing.com
