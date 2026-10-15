@@ -21208,6 +21208,7 @@ domain:postyourgirls.ws
 domain:potato.im
 domain:potatso.com
 domain:potenza.jp
+domain:potvpn.com
 domain:poudobnee.com
 domain:pourquoi.tw
 domain:povpornonly.com
@@ -22646,6 +22647,7 @@ domain:scatvids.club
 domain:scatville.com
 domain:scb.ru
 domain:scdn.co
+domain:scea.com
 domain:scene7.com
 domain:scenesource.me
 domain:scharferporno.com
@@ -23721,6 +23723,7 @@ domain:sony.com.ni
 domain:sony.com.pa
 domain:sony.com.pe
 domain:sony.com.ph
+domain:sony.com.py
 domain:sony.com.sg
 domain:sony.com.sv
 domain:sony.com.tr
@@ -23764,8 +23767,10 @@ domain:sonydesign.com
 domain:sonydna.com
 domain:sonyentertainmentnetwork.com
 domain:sonyglobalsolutions.jp
+domain:sonyinteractive.com
 domain:sonykigyo.jp
 domain:sonylatvija.com
+domain:sonymusic.com.hk
 domain:sonynetwork.co.jp
 domain:sonypcl.jp
 domain:sonypictures.com
