@@ -7286,6 +7286,7 @@ domain:cursecdn.com
 domain:curseforge.com
 domain:cursor-cdn.com
 domain:cursorapi.com
+domain:cursorvm.com
 domain:curve.fi
 domain:curvefish.com
 domain:curvybbwwives.com
@@ -9592,6 +9593,7 @@ domain:facebbook.com
 domain:facebboook.com
 domain:facebcook.com
 domain:facebdok.com
+domain:facebgook.com
 domain:facebhook.com
 domain:facebkkk.com
 domain:facebo-ok.com
@@ -9619,6 +9621,7 @@ domain:facebood.com
 domain:facebooe.com
 domain:faceboof.com
 domain:facebooi.com
+domain:facebooik.com
 domain:facebooik.org
 domain:facebooj.com
 domain:facebook-corp.com
@@ -9779,6 +9782,7 @@ domain:facecbook.com
 domain:facecbook.org
 domain:facecook.com
 domain:facecook.org
+domain:facedbook.com
 domain:faceebok.com
 domain:faceebook.com
 domain:faceebot.com
@@ -14199,6 +14203,7 @@ domain:instagramtips.com
 domain:instagramtr.com
 domain:instagran.com
 domain:instagranm.com
+domain:instagrem.com
 domain:instagrm.com
 domain:instagtram.com
 domain:instagy.com
@@ -16186,6 +16191,7 @@ domain:lms01.com
 domain:lmstudio.ai
 domain:lmsys.org
 domain:lnkd.in
+domain:lnstagram-help.com
 domain:load.to
 domain:loanbuilder.com
 domain:lobsangwangyal.com
@@ -20169,6 +20175,7 @@ domain:payhulu.com
 domain:paylike.com
 domain:payment.ru
 domain:payments-jp.amazon.com
+domain:paypa1.com
 domain:paypa1.org
 domain:paypaal.com
 domain:paypal-activate.com
@@ -22663,6 +22670,7 @@ domain:schwab.com.cn
 domain:schwab.com.hk
 domain:schwab.com.sg
 domain:schwabassetmanagement.com
+domain:schwabcdn.com
 domain:schwabplan.com
 domain:sci-hub.ee
 domain:sci-hub.it.nf
@@ -25356,6 +25364,8 @@ domain:timesofindia.indiatimes.com
 domain:timestalks.com
 domain:timeweb.cloud
 domain:timeweb.com
+domain:timeweb.tech
+domain:timewebcloud.kz
 domain:timi1.me
 domain:timo0.com
 domain:timsah.com
@@ -26061,6 +26071,7 @@ domain:typekit.com
 domain:typekit.net
 domain:typenetwork.com
 domain:typepad.com
+domain:typesafe.ai
 domain:typeset.io
 domain:typesquare.com
 domain:typography.com
