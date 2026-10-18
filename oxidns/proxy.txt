@@ -137,6 +137,7 @@ full:d2xmjdvx03ij56.cloudfront.net
 full:d3196yreox78o9.cloudfront.net
 full:d31dormfno8pk4.cloudfront.net
 full:d33wubrfki0l68.cloudfront.net
+full:d348twzf7a8p5.cloudfront.net
 full:d349g9zuie06uo.cloudfront.net
 full:d36nr0u3xmc4mm.cloudfront.net
 full:d3aqoihi2n8ty8.cloudfront.net
@@ -161,6 +162,7 @@ full:deribit.cdn.prismic.io
 full:deutschewelle.h-cdn.com
 full:developer.microsoft.com
 full:developers.facebook.com
+full:devforum-uploads.s3.dualstack.us-east-2.amazonaws.com
 full:dfp6rglgjqszk.cloudfront.net
 full:dgeft87wbj63p.cloudfront.net
 full:discord-attachments-uploads-prd.storage.googleapis.com
@@ -170,6 +172,7 @@ full:dlmobilegarena-a.akamaihd.net
 full:dmqdd6hw24ucf.cloudfront.net
 full:docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 full:docker-pinata-support.s3.amazonaws.com
+full:doy2mn9upadnk.cloudfront.net
 full:dqd0jw5gvbchn.cloudfront.net
 full:dqrpb9wgowsf5.cloudfront.net
 full:ds-linear-abematv.akamaized.net
@@ -1142,6 +1145,7 @@ domain:4greedy.com
 domain:4gtv.tv
 domain:4hu.one
 domain:4hu.tv
+domain:4irc.com
 domain:4kporn.xxx
 domain:4ksex.me
 domain:4kup.net
@@ -4298,8 +4302,14 @@ domain:beevpn.com
 domain:beforeigners.com
 domain:befuck.com
 domain:befuck.net
+domain:beget.app
+domain:beget.cloud
 domain:beget.com
+domain:beget.de
+domain:beget.hosting
+domain:beget.pro
 domain:beget.ru
+domain:begetcdn.cloud
 domain:begin-trade.com
 domain:behance.net
 domain:behindkink.com
@@ -4337,6 +4347,7 @@ domain:berlinerbericht.de
 domain:berlintwitterwall.com
 domain:berm.co.nz
 domain:beru.ru
+domain:beserver.ru
 domain:best-sex-games.com
 domain:best2pay.net
 domain:best4bim.com
@@ -4451,6 +4462,7 @@ domain:bfads.net
 domain:bffshd.com
 domain:bfnn.org
 domain:bfsh.hk
+domain:bget.ru
 domain:bgicdn.com
 domain:bgm.tv
 domain:bgme.me
@@ -7454,6 +7466,7 @@ domain:darrenliuwei.com
 domain:dart.dev
 domain:dartlang.org
 domain:dartpad.dev
+domain:dartsearch.net
 domain:darwindimensions.com
 domain:darwinsource.com
 domain:darwinsource.org
@@ -21522,6 +21535,7 @@ domain:putinho.net
 domain:putlocker.com
 domain:putty.org
 domain:puuko.com
+domain:pv-cdn.net
 domain:pvp.net
 domain:pvp.tv
 domain:pvt.sexy
@@ -23957,6 +23971,7 @@ domain:sprinklesapp.com
 domain:sprite.org
 domain:sproutcore.com
 domain:sproxy.info
+domain:sprut.io
 domain:sptvbroadcast.com
 domain:sputnikglobe.com
 domain:sputnikimages.com
@@ -28505,6 +28520,7 @@ domain:xn--8uq428d76d.tokyo
 domain:xn--90ab.com
 domain:xn--90ab2c.xn--p1ai
 domain:xn--90absjljw3g.xn--p1ai
+domain:xn--90aefb9d.xn--p1ai
 domain:xn--90aifd0az.shop
 domain:xn--90aifd0azb.xn--p1acf
 domain:xn--90wwvt03e.com
