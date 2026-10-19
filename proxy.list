@@ -211,7 +211,6 @@ DOMAIN,firebaseinstallations.googleapis.com
 DOMAIN,firebaseperusertopics-pa.googleapis.com
 DOMAIN,firebaseremoteconfig.googleapis.com
 DOMAIN,firstsearch.oclc.org
-DOMAIN,flightsimulator.azureedge.net
 DOMAIN,fontshop-prod-responsive-images.s3.amazonaws.com
 DOMAIN,foxnewsplayer-a.akamaihd.net
 DOMAIN,gamedownloads-rockstargames-com.akamaized.net
@@ -261,6 +260,8 @@ DOMAIN,impala-media-production.s3.amazonaws.com
 DOMAIN,imperial.insendi.com
 DOMAIN,ip.net.coffee
 DOMAIN,itvpnpmobile-a.akamaihd.net
+DOMAIN,kp-config-smart-tv.akamaized.net
+DOMAIN,kp-configs-smart-tv.s3.eu-central-1.amazonaws.com
 DOMAIN,lastfm-img.freetls.fastly.net
 DOMAIN,lastfm.freetls.fastly.net
 DOMAIN,lazer.ppy.sh
@@ -1143,7 +1144,6 @@ DOMAIN-SUFFIX,4greedy.com
 DOMAIN-SUFFIX,4gtv.tv
 DOMAIN-SUFFIX,4hu.one
 DOMAIN-SUFFIX,4hu.tv
-DOMAIN-SUFFIX,4irc.com
 DOMAIN-SUFFIX,4kporn.xxx
 DOMAIN-SUFFIX,4ksex.me
 DOMAIN-SUFFIX,4kup.net
@@ -3266,7 +3266,6 @@ DOMAIN-SUFFIX,asminternational.org
 DOMAIN-SUFFIX,asmr.gay
 DOMAIN-SUFFIX,asmrbuluo.com
 DOMAIN-SUFFIX,asn-online.org
-DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,asp-cc.com
 DOMAIN-SUFFIX,asp.net
 DOMAIN-SUFFIX,aspbjournals.org
@@ -7464,7 +7463,6 @@ DOMAIN-SUFFIX,darrenliuwei.com
 DOMAIN-SUFFIX,dart.dev
 DOMAIN-SUFFIX,dartlang.org
 DOMAIN-SUFFIX,dartpad.dev
-DOMAIN-SUFFIX,dartsearch.net
 DOMAIN-SUFFIX,darwindimensions.com
 DOMAIN-SUFFIX,darwinsource.com
 DOMAIN-SUFFIX,darwinsource.org
@@ -10382,7 +10380,6 @@ DOMAIN-SUFFIX,flickr.net
 DOMAIN-SUFFIX,flickrhivemind.net
 DOMAIN-SUFFIX,flickriver.com
 DOMAIN-SUFFIX,flightradar24.com
-DOMAIN-SUFFIX,flightsimulator.com
 DOMAIN-SUFFIX,flipboard.com
 DOMAIN-SUFFIX,flipfap.com
 DOMAIN-SUFFIX,flipkart.com
@@ -10794,6 +10791,7 @@ DOMAIN-SUFFIX,freejavporn.mobi
 DOMAIN-SUFFIX,freekazakhs.org
 DOMAIN-SUFFIX,freekwonpyong.org
 DOMAIN-SUFFIX,freelifetimefuckbook.com
+DOMAIN-SUFFIX,freelotto.com
 DOMAIN-SUFFIX,freemacsoft.net
 DOMAIN-SUFFIX,freeman2.com
 DOMAIN-SUFFIX,freematuresgallery.com
@@ -16526,6 +16524,7 @@ DOMAIN-SUFFIX,magic-net.info
 DOMAIN-SUFFIX,magic.link
 DOMAIN-SUFFIX,magicalmirai.com
 DOMAIN-SUFFIX,magicmovies.com
+DOMAIN-SUFFIX,magnific.com
 DOMAIN-SUFFIX,mahabodhi.org
 DOMAIN-SUFFIX,mahajantech.com
 DOMAIN-SUFFIX,mahjongsoul.com
@@ -16667,6 +16666,7 @@ DOMAIN-SUFFIX,marketingcloud.com
 DOMAIN-SUFFIX,marketo.co.uk
 DOMAIN-SUFFIX,marketo.tv
 DOMAIN-SUFFIX,marketodesigner.com
+DOMAIN-SUFFIX,marketolive.com
 DOMAIN-SUFFIX,marketwatch.com
 DOMAIN-SUFFIX,markingmenus.com
 DOMAIN-SUFFIX,markzuckerberg.com
@@ -18103,6 +18103,7 @@ DOMAIN-SUFFIX,mt.lv
 DOMAIN-SUFFIX,mt0011.site
 DOMAIN-SUFFIX,mtao.fun
 DOMAIN-SUFFIX,mthruf.com
+DOMAIN-SUFFIX,mts-link.ru
 DOMAIN-SUFFIX,mts-ws.net
 DOMAIN-SUFFIX,mts.ru
 DOMAIN-SUFFIX,mtsbank.ru
@@ -19948,11 +19949,13 @@ DOMAIN-SUFFIX,otnd.org
 DOMAIN-SUFFIX,otokonokoland.com
 DOMAIN-SUFFIX,otpbank.ru
 DOMAIN-SUFFIX,otto.de
+DOMAIN-SUFFIX,otzo.com
 DOMAIN-SUFFIX,oudoll.com
 DOMAIN-SUFFIX,oup.com
 DOMAIN-SUFFIX,ouplaw.com
 DOMAIN-SUFFIX,our-notes.jp
 DOMAIN-SUFFIX,ourdearamy.com
+DOMAIN-SUFFIX,ourhobby.com
 DOMAIN-SUFFIX,ouroath.com
 DOMAIN-SUFFIX,oursexgames.com
 DOMAIN-SUFFIX,ourshdtv.com
@@ -21221,6 +21224,7 @@ DOMAIN-SUFFIX,postimages.org
 DOMAIN-SUFFIX,postimg.cc
 DOMAIN-SUFFIX,postimg.org
 DOMAIN-SUFFIX,postini.com
+DOMAIN-SUFFIX,postman.com
 DOMAIN-SUFFIX,postmarkapp.com
 DOMAIN-SUFFIX,posts.careerengine.us
 DOMAIN-SUFFIX,posty.kr
@@ -22863,6 +22867,7 @@ DOMAIN-SUFFIX,servercore.com
 DOMAIN-SUFFIX,servercore.live
 DOMAIN-SUFFIX,serverfault.com
 DOMAIN-SUFFIX,serverlesslibrary.net
+DOMAIN-SUFFIX,serveusers.com
 DOMAIN-SUFFIX,services-apple.net
 DOMAIN-SUFFIX,services-exchange.com
 DOMAIN-SUFFIX,services.googleapis.cn
@@ -26192,6 +26197,7 @@ DOMAIN-SUFFIX,ukipad.com
 DOMAIN-SUFFIX,ukit.ai
 DOMAIN-SUFFIX,ukit.com
 DOMAIN-SUFFIX,ukit.group
+DOMAIN-SUFFIX,ukit.me
 DOMAIN-SUFFIX,ukliferadio.co.uk
 DOMAIN-SUFFIX,ukoz.ru
 DOMAIN-SUFFIX,ukraina.ru
@@ -27028,6 +27034,7 @@ DOMAIN-SUFFIX,vivthomas.com
 DOMAIN-SUFFIX,vixen.com
 DOMAIN-SUFFIX,vixengroup.com
 DOMAIN-SUFFIX,vixvids.to
+DOMAIN-SUFFIX,vizvaz.com
 DOMAIN-SUFFIX,vjav.com
 DOMAIN-SUFFIX,vjmedia.com.hk
 DOMAIN-SUFFIX,vk-apps.com

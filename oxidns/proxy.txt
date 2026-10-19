@@ -213,7 +213,6 @@ full:firebaseinstallations.googleapis.com
 full:firebaseperusertopics-pa.googleapis.com
 full:firebaseremoteconfig.googleapis.com
 full:firstsearch.oclc.org
-full:flightsimulator.azureedge.net
 full:fontshop-prod-responsive-images.s3.amazonaws.com
 full:foxnewsplayer-a.akamaihd.net
 full:gamedownloads-rockstargames-com.akamaized.net
@@ -263,6 +262,8 @@ full:impala-media-production.s3.amazonaws.com
 full:imperial.insendi.com
 full:ip.net.coffee
 full:itvpnpmobile-a.akamaihd.net
+full:kp-config-smart-tv.akamaized.net
+full:kp-configs-smart-tv.s3.eu-central-1.amazonaws.com
 full:lastfm-img.freetls.fastly.net
 full:lastfm.freetls.fastly.net
 full:lazer.ppy.sh
@@ -1145,7 +1146,6 @@ domain:4greedy.com
 domain:4gtv.tv
 domain:4hu.one
 domain:4hu.tv
-domain:4irc.com
 domain:4kporn.xxx
 domain:4ksex.me
 domain:4kup.net
@@ -3268,7 +3268,6 @@ domain:asminternational.org
 domain:asmr.gay
 domain:asmrbuluo.com
 domain:asn-online.org
-domain:asobostudio.com
 domain:asp-cc.com
 domain:asp.net
 domain:aspbjournals.org
@@ -7466,7 +7465,6 @@ domain:darrenliuwei.com
 domain:dart.dev
 domain:dartlang.org
 domain:dartpad.dev
-domain:dartsearch.net
 domain:darwindimensions.com
 domain:darwinsource.com
 domain:darwinsource.org
@@ -10384,7 +10382,6 @@ domain:flickr.net
 domain:flickrhivemind.net
 domain:flickriver.com
 domain:flightradar24.com
-domain:flightsimulator.com
 domain:flipboard.com
 domain:flipfap.com
 domain:flipkart.com
@@ -10796,6 +10793,7 @@ domain:freejavporn.mobi
 domain:freekazakhs.org
 domain:freekwonpyong.org
 domain:freelifetimefuckbook.com
+domain:freelotto.com
 domain:freemacsoft.net
 domain:freeman2.com
 domain:freematuresgallery.com
@@ -16528,6 +16526,7 @@ domain:magic-net.info
 domain:magic.link
 domain:magicalmirai.com
 domain:magicmovies.com
+domain:magnific.com
 domain:mahabodhi.org
 domain:mahajantech.com
 domain:mahjongsoul.com
@@ -16669,6 +16668,7 @@ domain:marketingcloud.com
 domain:marketo.co.uk
 domain:marketo.tv
 domain:marketodesigner.com
+domain:marketolive.com
 domain:marketwatch.com
 domain:markingmenus.com
 domain:markzuckerberg.com
@@ -18105,6 +18105,7 @@ domain:mt.lv
 domain:mt0011.site
 domain:mtao.fun
 domain:mthruf.com
+domain:mts-link.ru
 domain:mts-ws.net
 domain:mts.ru
 domain:mtsbank.ru
@@ -19950,11 +19951,13 @@ domain:otnd.org
 domain:otokonokoland.com
 domain:otpbank.ru
 domain:otto.de
+domain:otzo.com
 domain:oudoll.com
 domain:oup.com
 domain:ouplaw.com
 domain:our-notes.jp
 domain:ourdearamy.com
+domain:ourhobby.com
 domain:ouroath.com
 domain:oursexgames.com
 domain:ourshdtv.com
@@ -21223,6 +21226,7 @@ domain:postimages.org
 domain:postimg.cc
 domain:postimg.org
 domain:postini.com
+domain:postman.com
 domain:postmarkapp.com
 domain:posts.careerengine.us
 domain:posty.kr
@@ -22865,6 +22869,7 @@ domain:servercore.com
 domain:servercore.live
 domain:serverfault.com
 domain:serverlesslibrary.net
+domain:serveusers.com
 domain:services-apple.net
 domain:services-exchange.com
 domain:services.googleapis.cn
@@ -26194,6 +26199,7 @@ domain:ukipad.com
 domain:ukit.ai
 domain:ukit.com
 domain:ukit.group
+domain:ukit.me
 domain:ukliferadio.co.uk
 domain:ukoz.ru
 domain:ukraina.ru
@@ -27030,6 +27036,7 @@ domain:vivthomas.com
 domain:vixen.com
 domain:vixengroup.com
 domain:vixvids.to
+domain:vizvaz.com
 domain:vjav.com
 domain:vjmedia.com.hk
 domain:vk-apps.com

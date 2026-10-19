@@ -22171,7 +22171,6 @@ domain:city8090.com
 domain:citybrain.com
 domain:citygf.com
 domain:cityhui.com
-domain:cityhuitech.com
 domain:citylinker.com
 domain:cityoncenter.com
 domain:cityos.com
@@ -58531,6 +58530,7 @@ domain:ldfdcw.com
 domain:ldgjj.com
 domain:ldgslb.com
 domain:ldhrd.com
+domain:ldhy.click
 domain:ldj-edujy.com
 domain:ldjt-china.com
 domain:ldkftz.com
@@ -68586,6 +68586,7 @@ domain:obricclouddw.com
 domain:obsapp.net
 domain:obsbot.com
 domain:obsidian-display.com
+domain:obsworks.com
 domain:obtelecom.com
 domain:obyee.com
 domain:ocahs.com
@@ -77576,7 +77577,6 @@ domain:seanya.com
 domain:seanyxie.com
 domain:seapsoft.com
 domain:search616.com
-domain:searchpstatp.com
 domain:searchstatic.com
 domain:searchtb.com
 domain:searchtoutiaolive.com
@@ -85693,6 +85693,7 @@ domain:tencent.net
 domain:tencentads.com
 domain:tencentads.net
 domain:tencentanxin.com
+domain:tencentapigw.com
 domain:tencentapis.com
 domain:tencentapp.com
 domain:tencentapps.com
@@ -103415,6 +103416,7 @@ domain:yunqifly.com
 domain:yunqiju.com
 domain:yunqin.online
 domain:yunqishi.net
+domain:yunqishi8.com
 domain:yunqishuju.com
 domain:yunque360.com
 domain:yunquna.com
@@ -104357,6 +104359,7 @@ domain:zaxdcredit.com
 domain:zaxline.com
 domain:zaxzn.com
 domain:zaysz.com
+domain:zazhipu.com
 domain:zazsz.com
 domain:zb-kc.com
 domain:zb1.org
