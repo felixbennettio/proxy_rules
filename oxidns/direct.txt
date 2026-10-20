@@ -19987,7 +19987,6 @@ domain:chdmc.com
 domain:chdqyy.com
 domain:chdtp.com
 domain:che-shijie.com
-domain:che.com
 domain:che101.com
 domain:che168.com
 domain:che168.net
@@ -58530,7 +58529,6 @@ domain:ldfdcw.com
 domain:ldgjj.com
 domain:ldgslb.com
 domain:ldhrd.com
-domain:ldhy.click
 domain:ldj-edujy.com
 domain:ldjt-china.com
 domain:ldkftz.com
@@ -68586,7 +68584,6 @@ domain:obricclouddw.com
 domain:obsapp.net
 domain:obsbot.com
 domain:obsidian-display.com
-domain:obsworks.com
 domain:obtelecom.com
 domain:obyee.com
 domain:ocahs.com
@@ -77577,6 +77574,7 @@ domain:seanya.com
 domain:seanyxie.com
 domain:seapsoft.com
 domain:search616.com
+domain:searchpstatp.com
 domain:searchstatic.com
 domain:searchtb.com
 domain:searchtoutiaolive.com
@@ -84517,6 +84515,8 @@ domain:sztxsz.com
 domain:szty56.com
 domain:sztz.org
 domain:sztzzs.com
+domain:szu.app
+domain:szu.moe
 domain:szuavia.org
 domain:szudad.com
 domain:szunionlab.com
@@ -103416,7 +103416,6 @@ domain:yunqifly.com
 domain:yunqiju.com
 domain:yunqin.online
 domain:yunqishi.net
-domain:yunqishi8.com
 domain:yunqishuju.com
 domain:yunque360.com
 domain:yunquna.com
@@ -104359,7 +104358,6 @@ domain:zaxdcredit.com
 domain:zaxline.com
 domain:zaxzn.com
 domain:zaysz.com
-domain:zazhipu.com
 domain:zazsz.com
 domain:zb-kc.com
 domain:zb1.org

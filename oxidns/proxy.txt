@@ -3599,8 +3599,10 @@ domain:avinetworks.com
 domain:avinin.com
 domain:avira.com
 domain:avistaz.to
+domain:avito.com
 domain:avito.ru
 domain:avito.st
+domain:avito.tech
 domain:avizoon.site
 domain:avizoone.com
 domain:avjb.com
@@ -16668,7 +16670,6 @@ domain:marketingcloud.com
 domain:marketo.co.uk
 domain:marketo.tv
 domain:marketodesigner.com
-domain:marketolive.com
 domain:marketwatch.com
 domain:markingmenus.com
 domain:markzuckerberg.com
@@ -19951,13 +19952,11 @@ domain:otnd.org
 domain:otokonokoland.com
 domain:otpbank.ru
 domain:otto.de
-domain:otzo.com
 domain:oudoll.com
 domain:oup.com
 domain:ouplaw.com
 domain:our-notes.jp
 domain:ourdearamy.com
-domain:ourhobby.com
 domain:ouroath.com
 domain:oursexgames.com
 domain:ourshdtv.com
@@ -22869,7 +22868,6 @@ domain:servercore.com
 domain:servercore.live
 domain:serverfault.com
 domain:serverlesslibrary.net
-domain:serveusers.com
 domain:services-apple.net
 domain:services-exchange.com
 domain:services.googleapis.cn
@@ -26199,7 +26197,6 @@ domain:ukipad.com
 domain:ukit.ai
 domain:ukit.com
 domain:ukit.group
-domain:ukit.me
 domain:ukliferadio.co.uk
 domain:ukoz.ru
 domain:ukraina.ru
@@ -27036,7 +27033,6 @@ domain:vivthomas.com
 domain:vixen.com
 domain:vixengroup.com
 domain:vixvids.to
-domain:vizvaz.com
 domain:vjav.com
 domain:vjmedia.com.hk
 domain:vk-apps.com
