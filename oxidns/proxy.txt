@@ -146,6 +146,7 @@ full:d3c7rimkq79yfu.cloudfront.net
 full:d3lh5kkip965lj.cloudfront.net
 full:d3nwj80emtnjeo.cloudfront.net
 full:d3r7nsslvs6aaf.cloudfront.net
+full:d3stzm2eumvgb4.cloudfront.net
 full:d3ucl0eqgl80l5.cloudfront.net
 full:d3vd9lfkzbru3h.cloudfront.net
 full:d6d4ismr40iw.cloudfront.net
@@ -2637,6 +2638,7 @@ domain:ansarbank.com
 domain:ansin.erodayo.com
 domain:answering-islam.org
 domain:ant.design
+domain:ant.dev
 domain:antarvasnaclips.com
 domain:antarvasnax.com
 domain:antd.org
@@ -2649,6 +2651,7 @@ domain:antichristendom.com
 domain:antiphishing.nl
 domain:antiphishing.ru
 domain:antiwave.net
+domain:antspace.dev
 domain:anudetube.com
 domain:anuneko.com
 domain:anxiangxing.com
@@ -9984,6 +9987,7 @@ domain:fapster.xxx
 domain:fapteencam.com
 domain:faptitans.com
 domain:fapvid.com
+domain:faqserv.com
 domain:fareastpornhub.com
 domain:farfetch-apps.com
 domain:farfetch-contents.com
@@ -10412,6 +10416,17 @@ domain:fluidfxapp.com
 domain:fluidpreview.com
 domain:flutter.dev
 domain:flutterapp.com
+domain:fluxer.app
+domain:fluxer.com
+domain:fluxer.dev
+domain:fluxer.gg
+domain:fluxer.gift
+domain:fluxer.media
+domain:fluxer.tools
+domain:fluxerapp.com
+domain:fluxerstatic.com
+domain:fluxerstatus.com
+domain:fluxerusercontent.com
 domain:fly.dev
 domain:fly.io
 domain:flyflv.com

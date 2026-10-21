@@ -19987,6 +19987,7 @@ domain:chdmc.com
 domain:chdqyy.com
 domain:chdtp.com
 domain:che-shijie.com
+domain:che.com
 domain:che101.com
 domain:che168.com
 domain:che168.net
@@ -85693,7 +85694,6 @@ domain:tencent.net
 domain:tencentads.com
 domain:tencentads.net
 domain:tencentanxin.com
-domain:tencentapigw.com
 domain:tencentapis.com
 domain:tencentapp.com
 domain:tencentapps.com
