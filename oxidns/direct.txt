@@ -19987,7 +19987,6 @@ domain:chdmc.com
 domain:chdqyy.com
 domain:chdtp.com
 domain:che-shijie.com
-domain:che.com
 domain:che101.com
 domain:che168.com
 domain:che168.net
