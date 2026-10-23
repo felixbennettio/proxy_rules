@@ -7037,6 +7037,7 @@ domain:conoha.jp
 domain:conquerwithcharacter.com
 domain:conscrypt.com
 domain:conscrypt.org
+domain:console.typesafe.ai
 domain:constitutionalism.solutions
 domain:constructware.com
 domain:consul.io
@@ -11113,6 +11114,7 @@ domain:g0v.social
 domain:g1.com.br
 domain:g2.com
 domain:g6hentai.com
+domain:ga.jspm.io
 domain:gab.com
 domain:gabia.net
 domain:gabocorp.com
@@ -25883,7 +25885,6 @@ domain:tubinge.com
 domain:tubitv.com
 domain:tubsexer.com
 domain:tubxporn.com
-domain:tubxporn.xxx
 domain:tufos.com.br
 domain:tug.org
 domain:tui.orzdream.com
