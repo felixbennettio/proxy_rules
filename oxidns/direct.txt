@@ -8,6 +8,7 @@ full:acg.tv
 full:ai.zhaomi.cn
 full:api.blipsandchitz.me
 full:api.smoot.apple.cn
+full:app.moegirl.org.cn
 full:app.viayoo.com
 full:aterm.me
 full:b23.tv
@@ -71,6 +72,7 @@ full:ss.bjmu.edu.cn
 full:staging-controlbe.floonet.goog
 full:staging-databe.floonet.goog
 full:staging.databe.floonet.goog
+full:storage.moegirl.org.cn
 full:study.163.com
 full:time.amazonaws.cn
 full:url.cn
@@ -18994,6 +18996,7 @@ domain:cdqszz.com
 domain:cdqz.net
 domain:cdrbs.net
 domain:cdrcb.com
+domain:cdrcbank.com
 domain:cdren.net
 domain:cdrich.com
 domain:cdrjob.com
@@ -24849,6 +24852,7 @@ domain:cqyxzz.com
 domain:cqyygz.com
 domain:cqyyjc.com
 domain:cqyysx.com
+domain:cqyyxc.com
 domain:cqyyzy.com
 domain:cqyznews.com
 domain:cqzbcg.com
@@ -48097,6 +48101,7 @@ domain:ibaitiao.com
 domain:ibaizhu.com
 domain:ibanana.club
 domain:ibanbu.com
+domain:ibangbank.com
 domain:ibanggo.com
 domain:ibangkf.com
 domain:ibangtiao.com
@@ -50179,6 +50184,7 @@ domain:ishuw.com
 domain:isi-gf.com
 domain:isiabio.com
 domain:isign.ren
+domain:isigning.com
 domain:isigu.com
 domain:isilent.me
 domain:isilicontech.com
@@ -65754,6 +65760,7 @@ domain:nanningyouhua.com
 domain:nannjlnk.com
 domain:nanobody-biolab.com
 domain:nanochrom.com
+domain:nanocorechip.com
 domain:nanoeast.net
 domain:nanoer.net
 domain:nanoinglobal.com
@@ -89689,6 +89696,7 @@ domain:uzing.net
 domain:uzise.com
 domain:uzkqymgs.com
 domain:uzshare.com
+domain:uzzf.com
 domain:v-56.com
 domain:v-jitp-dom.com
 domain:v-jitp-dom.net
