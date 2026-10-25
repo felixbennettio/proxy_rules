@@ -4495,6 +4495,7 @@ domain:bibox.com
 domain:bic2011.org
 domain:bidbay.com
 domain:bidi.net.uk
+domain:bidobido.xyz
 domain:bidong25.com
 domain:bidong9.com
 domain:bidorbuyindia.com
@@ -4551,6 +4552,7 @@ domain:bijukujo.club
 domain:bikaa.xyz
 domain:bikac.xyz
 domain:bikaios.xyz
+domain:bikawebapp.com
 domain:bild.de
 domain:bili2.cc
 domain:bili888.com
@@ -13423,6 +13425,7 @@ domain:hua-yue.net
 domain:huabansp.com
 domain:huabansp7.club
 domain:huaglad.com
+domain:huakacomic.com
 domain:huanghuagang.org
 domain:huangse.love
 domain:huangyiyu.com
@@ -20583,6 +20586,7 @@ domain:piaotia.com
 domain:piaotian.net
 domain:piapp.com.tw
 domain:piapro.net
+domain:pica-id.com
 domain:picacg2022.com
 domain:picacgp.com
 domain:picacgy.com
@@ -25471,6 +25475,7 @@ domain:tinypng.com
 domain:tinyurl.com
 domain:tiohentai.com
 domain:tipas.net
+domain:tipatipa.xyz
 domain:tire-cadcam.com
 domain:tiresplus.com
 domain:tistory.com
@@ -28598,14 +28603,8 @@ domain:xn--fiq80y3xbiwr.hk
 domain:xn--fiq80y3xbiwr.xn--j6w193g
 domain:xn--fiq80y3xbiwrs0kiu9d.hk
 domain:xn--fiq80y3xbiwrs0kiu9d.xn--j6w193g
-domain:xn--fiqs8s1bxp3anr7a.hk
-domain:xn--fiqs8s1bxp3anr7a.xn--j6w193g
-domain:xn--fiqs8s1byzqyvl.hk
-domain:xn--fiqs8s1byzqyvl.xn--j6w193g
 domain:xn--fiqs8sxootzz.xn--hxt814e
 domain:xn--flw351e.com
-domain:xn--gdt08a.hk
-domain:xn--gdt08a.xn--j6w193g
 domain:xn--ggle-55da.com
 domain:xn--gmq348bujlxrb.com
 domain:xn--gmq92kd2rm1kx34a.com
@@ -28624,8 +28623,6 @@ domain:xn--kcrv3utim32hx9f6qe.com
 domain:xn--kput3imi374g.xn--hxt814e
 domain:xn--mts47c3w9b1qr.net
 domain:xn--mtswd61ejxq.com
-domain:xn--mxtq18a.hk
-domain:xn--mxtq18a.xn--j6w193g
 domain:xn--ngstr-lra8j.com
 domain:xn--noss43i.com
 domain:xn--oiq.cc
@@ -28634,14 +28631,8 @@ domain:xn--pearsonenespaol-brb.com
 domain:xn--pssu7ci2j23mp9ny48b.hk
 domain:xn--pssu7ci2j23mp9ny48b.xn--j6w193g
 domain:xn--pssu7ci3q5oge0ai91q.xn--j6w193g
-domain:xn--pssu7cv61af1tcs59bnvd.hk
-domain:xn--pssu7cv61af1tcs59bnvd.xn--j6w193g
 domain:xn--pssu7cv61af44b.hk
 domain:xn--pssu7cv61af44b.xn--j6w193g
-domain:xn--pssu7cv61ahw8aq79bztd.hk
-domain:xn--pssu7cv61ahw8aq79bztd.xn--j6w193g
-domain:xn--pssu7cv61ahwcb1p2yk.hk
-domain:xn--pssu7cv61ahwcb1p2yk.xn--j6w193g
 domain:xn--pssu7cz8nr8ibkx1e8a.xn--j6w193g
 domain:xn--q41am8x.com
 domain:xn--qoq462m.com
@@ -28657,11 +28648,7 @@ domain:xn--uis17aj9kmuf.com
 domain:xn--uis44a.xn--j6w193g
 domain:xn--urs05q.jp
 domain:xn--vuqv2cf7wzyig79c.com
-domain:xn--wcv22d.hk
-domain:xn--wcv22d.xn--j6w193g
 domain:xn--wcvs22d.xn--j6w193g
-domain:xn--wcvs22d1m.hk
-domain:xn--wcvs22d1m.xn--j6w193g
 domain:xn--x-qeu1ji09tzlg.biz
 domain:xn--x-qeu1ji09tzlg.net
 domain:xn--xsq421m.com

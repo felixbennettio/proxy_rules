@@ -48390,7 +48390,6 @@ domain:icljt.com
 domain:icloud-apple.cn
 domain:icloud-content.com.cn
 domain:icloud-power.com
-domain:icloud.cn
 domain:icloud.com.cn
 domain:icloud.net.cn
 domain:icloudapple.cn
@@ -86730,6 +86729,7 @@ domain:tjsjwygg.com
 domain:tjsjx.com
 domain:tjskq.com
 domain:tjskqyy.com
+domain:tjsptech.com
 domain:tjst.net
 domain:tjstats.com
 domain:tjtele.com
