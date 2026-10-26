@@ -12737,7 +12737,6 @@ domain:awc618.com
 domain:awcloud.com
 domain:awcn.cc
 domain:awehunt.com
-domain:awemeughun.com
 domain:awemeuglang.com
 domain:awemeugsoul.com
 domain:awemeugwave.com
@@ -33544,6 +33543,7 @@ domain:filfox.info
 domain:fillersmart.com
 domain:fillseo.com
 domain:film-yuelongchina.com
+domain:filmorigin.com
 domain:fily.fun
 domain:fim34s.com
 domain:fimmu.com
@@ -55514,6 +55514,7 @@ domain:kakamobi.com
 domain:kakappt.com
 domain:kakashuzi.net
 domain:kakatx.com
+domain:kakaxing.com
 domain:kakayuy.net
 domain:kaken-china.com
 domain:kaku-scdn.com
@@ -59108,6 +59109,7 @@ domain:liba.com
 domain:libaclub.com
 domain:libai.com
 domain:libaidns.com
+domain:libaishuo.com
 domain:libao007.com
 domain:libaopay.com
 domain:libawall.com
@@ -69994,6 +69996,7 @@ domain:peiyingefiles.com
 domain:peiyingo.com
 domain:peiyinshenqi.club
 domain:peiyinxiu.com
+domain:peiyou.com
 domain:peiyue.com
 domain:peizi.com
 domain:pejdw.com
@@ -89696,7 +89699,6 @@ domain:uzing.net
 domain:uzise.com
 domain:uzkqymgs.com
 domain:uzshare.com
-domain:uzzf.com
 domain:v-56.com
 domain:v-jitp-dom.com
 domain:v-jitp-dom.net

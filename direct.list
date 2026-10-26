@@ -12735,7 +12735,6 @@ DOMAIN-SUFFIX,awc618.com
 DOMAIN-SUFFIX,awcloud.com
 DOMAIN-SUFFIX,awcn.cc
 DOMAIN-SUFFIX,awehunt.com
-DOMAIN-SUFFIX,awemeughun.com
 DOMAIN-SUFFIX,awemeuglang.com
 DOMAIN-SUFFIX,awemeugsoul.com
 DOMAIN-SUFFIX,awemeugwave.com
@@ -33542,6 +33541,7 @@ DOMAIN-SUFFIX,filfox.info
 DOMAIN-SUFFIX,fillersmart.com
 DOMAIN-SUFFIX,fillseo.com
 DOMAIN-SUFFIX,film-yuelongchina.com
+DOMAIN-SUFFIX,filmorigin.com
 DOMAIN-SUFFIX,fily.fun
 DOMAIN-SUFFIX,fim34s.com
 DOMAIN-SUFFIX,fimmu.com
@@ -55512,6 +55512,7 @@ DOMAIN-SUFFIX,kakamobi.com
 DOMAIN-SUFFIX,kakappt.com
 DOMAIN-SUFFIX,kakashuzi.net
 DOMAIN-SUFFIX,kakatx.com
+DOMAIN-SUFFIX,kakaxing.com
 DOMAIN-SUFFIX,kakayuy.net
 DOMAIN-SUFFIX,kaken-china.com
 DOMAIN-SUFFIX,kaku-scdn.com
@@ -59106,6 +59107,7 @@ DOMAIN-SUFFIX,liba.com
 DOMAIN-SUFFIX,libaclub.com
 DOMAIN-SUFFIX,libai.com
 DOMAIN-SUFFIX,libaidns.com
+DOMAIN-SUFFIX,libaishuo.com
 DOMAIN-SUFFIX,libao007.com
 DOMAIN-SUFFIX,libaopay.com
 DOMAIN-SUFFIX,libawall.com
@@ -69992,6 +69994,7 @@ DOMAIN-SUFFIX,peiyingefiles.com
 DOMAIN-SUFFIX,peiyingo.com
 DOMAIN-SUFFIX,peiyinshenqi.club
 DOMAIN-SUFFIX,peiyinxiu.com
+DOMAIN-SUFFIX,peiyou.com
 DOMAIN-SUFFIX,peiyue.com
 DOMAIN-SUFFIX,peizi.com
 DOMAIN-SUFFIX,pejdw.com
@@ -89694,7 +89697,6 @@ DOMAIN-SUFFIX,uzing.net
 DOMAIN-SUFFIX,uzise.com
 DOMAIN-SUFFIX,uzkqymgs.com
 DOMAIN-SUFFIX,uzshare.com
-DOMAIN-SUFFIX,uzzf.com
 DOMAIN-SUFFIX,v-56.com
 DOMAIN-SUFFIX,v-jitp-dom.com
 DOMAIN-SUFFIX,v-jitp-dom.net
@@ -109963,7 +109965,8 @@ IP-CIDR,103.238.188.0/22
 IP-CIDR,103.238.204.0/22
 IP-CIDR,103.239.68.0/22
 IP-CIDR,103.239.152.0/22
-IP-CIDR,103.239.184.0/22
+IP-CIDR,103.239.184.0/23
+IP-CIDR,103.239.186.0/24
 IP-CIDR,103.239.192.0/22
 IP-CIDR,103.239.244.0/22
 IP-CIDR,103.240.16.0/22
@@ -111345,6 +111348,7 @@ IP-CIDR,162.14.0.0/18,no-resolve
 IP-CIDR,162.105.0.0/16
 IP-CIDR,163.0.0.0/16
 IP-CIDR,163.47.4.0/22
+IP-CIDR,163.52.28.0/23
 IP-CIDR,163.53.44.0/23
 IP-CIDR,163.53.60.0/22
 IP-CIDR,163.53.88.0/21

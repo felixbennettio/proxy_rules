@@ -44,6 +44,9 @@ full:apl-hamivideo.cdn.hinet.net
 full:apm-misaka.biliapi.net
 full:apple-tv-plus-press.apple.com
 full:apple.com.akadns.net
+full:appsgenaiserver-pa.clients.google.com
+full:appsgenaiserver-pa.clients6.google.com
+full:appsgenaiserver-pa.googleapis.com
 full:as-dash-uk-live.akamaized.net
 full:as-hls-uk-live.akamaized.net
 full:assets.ppy.sh
@@ -156,6 +159,8 @@ full:dashasiafox.akamaized.net
 full:databank.worldbank.org
 full:database.asahi.com
 full:datarouter.apps.netherrealm.com
+full:dc.applicationinsights.azure.com
+full:dc.services.visualstudio.com
 full:dcb0z5ovq92mz.cloudfront.net
 full:ddpjwstwtpszg.cloudfront.net
 full:dell.my.site.com
@@ -176,6 +181,7 @@ full:docker-pinata-support.s3.amazonaws.com
 full:doy2mn9upadnk.cloudfront.net
 full:dqd0jw5gvbchn.cloudfront.net
 full:dqrpb9wgowsf5.cloudfront.net
+full:dropbox.zendesk.com
 full:ds-linear-abematv.akamaized.net
 full:ds-vod-abematv.akamaized.net
 full:ds0h3roq6wcgc.cloudfront.net
@@ -276,6 +282,7 @@ full:linear.tv.apple.com
 full:link.theplatform.com
 full:litvfreemobile-hichannel.cdn.hinet.net
 full:live-patreon-marketing.pantheonsite.io
+full:live.applicationinsights.azure.com
 full:lolstatic-a.akamaihd.net
 full:m1.ppy.sh
 full:manifest.prod.boltdns.net
@@ -298,7 +305,6 @@ full:mwf-service.akamaized.net
 full:my.ippure.com
 full:myip.ipip.net
 full:nbbb1bb7.pmhcjk.com
-full:netflix.com.edgesuite.net
 full:news.ycombinator.com
 full:nix-community.github.io
 full:notary-submissions-prod.s3-accelerate.amazonaws.com
@@ -410,6 +416,7 @@ full:rsshub.rssforever.com
 full:rsshub.umzzz.com
 full:rsshub.woodland.cafe
 full:rsshub2.asailor.org
+full:rt.services.visualstudio.com
 full:rtm.tnt-ea.com
 full:sa78gs.wpc.edgecastcdn.net
 full:scc-hamivideo.cdn.hinet.net
@@ -492,7 +499,6 @@ full:scholar.googleusercontent.com
 full:scholar.l.google.com
 full:sni1dcb6gl.wpc.edgecastcdn.net
 full:spectator.ppy.sh
-full:spotify.com.edgesuite.net
 full:spotify.map.fastly.net
 full:spotify.map.fastlylb.net
 full:ssl-lvlt.cdn.ea.com
@@ -937,7 +943,6 @@ domain:1lib.pl
 domain:1lib.sk
 domain:1lib.to
 domain:1lib.tw
-domain:1mobile.com
 domain:1mobile.tw
 domain:1monsterbeatsbydreus.com
 domain:1password.ca
@@ -1073,7 +1078,6 @@ domain:3a5a.com
 domain:3animalsextube.com
 domain:3arabporn.com
 domain:3arabtv.com
-domain:3boys2girls.com
 domain:3d-comics.com
 domain:3d-december.com
 domain:3d-game.com
@@ -1577,6 +1581,7 @@ domain:adcommerce.tv
 domain:addictedtocoffee.de
 domain:addison-wesley.ch
 domain:addons.mozilla.org
+domain:addtodropbox.com
 domain:addyoutube.com
 domain:adelaidebbs.com
 domain:adelaidenow.com.au
@@ -7491,6 +7496,7 @@ domain:darwinsource.com
 domain:darwinsource.org
 domain:darwinsourcecode.com
 domain:dasaob.online
+domain:dash.ai
 domain:dashlane.com
 domain:dashly.app
 domain:dashly.help
@@ -8302,6 +8308,7 @@ domain:docs.com
 domain:docs.new
 domain:docs.rs
 domain:docs.rw
+domain:docsend.com
 domain:doctor-videos.com
 domain:doctorvoice.org
 domain:documentforce.com
@@ -8510,12 +8517,15 @@ domain:dropbox.tech
 domain:dropboxapi.com
 domain:dropboxbusiness.com
 domain:dropboxcaptcha.com
+domain:dropboxexperiment.com
 domain:dropboxforum.com
 domain:dropboxforums.com
 domain:dropboxinsiders.com
+domain:dropboxlegal.com
 domain:dropboxmail.com
 domain:dropboxpartners.com
 domain:dropboxstatic.com
+domain:dropboxteam.com
 domain:dropboxusercontent.com
 domain:droplr.com
 domain:drpc.org
@@ -12597,9 +12607,11 @@ domain:heix.pp.ru
 domain:helixstudios.net
 domain:helloandroid.com
 domain:helloavgirls.com
+domain:hellofax.com
 domain:hellokittybeats.com
 domain:hellomoto.com
 domain:helloqueer.com
+domain:hellosign.com
 domain:hellosmartbook.com
 domain:helloss.pw
 domain:hellotxt.com
@@ -16054,6 +16066,7 @@ domain:libraryinformationtechnology.com
 domain:librarylovefest.com
 domain:libraryofthumbs.com
 domain:libredd.it
+domain:librewolf.dev
 domain:librewolf.net
 domain:libsolutions.app
 domain:libsolutions.domains
@@ -21706,7 +21719,6 @@ domain:quanben-xiaoshuo.com
 domain:quanben.io
 domain:quannengshen.org
 domain:quantil.com
-domain:quantumbooter.net
 domain:quatrowireless.com
 domain:quatrum.com.br
 domain:quay.io
@@ -23484,7 +23496,6 @@ domain:sites.new
 domain:situero.com
 domain:six-degrees.io
 domain:six9dy.pw
-domain:sixte.st
 domain:sixth.biz
 domain:sjcollect.com
 domain:sjhsp1.buzz
@@ -24500,6 +24511,7 @@ domain:surfshark.com
 domain:surfsharkdns.com
 domain:surge-activation.com
 domain:surge.run
+domain:suroot.com
 domain:surrenderat20.net
 domain:suruga-ya.com
 domain:suruga-ya.jp
@@ -24961,30 +24973,7 @@ domain:tesla.services
 domain:teslaenergy.services
 domain:teslamotors.com
 domain:teslazta.net
-domain:test-ipv6.alpinedc.ch
-domain:test-ipv6.arauc.br
-domain:test-ipv6.belwue.net
-domain:test-ipv6.carnet.hr
-domain:test-ipv6.cl
-domain:test-ipv6.com
-domain:test-ipv6.cs.umd.edu
-domain:test-ipv6.csclub.uwaterloo.ca
-domain:test-ipv6.cz
-domain:test-ipv6.epic.network
-domain:test-ipv6.fratec.net
-domain:test-ipv6.freerangecloud.com
-domain:test-ipv6.go6.si
-domain:test-ipv6.hu
-domain:test-ipv6.is
-domain:test-ipv6.iu13.net
-domain:test-ipv6.ke.liquidtelecom.net
-domain:test-ipv6.noroutetohost.net
-domain:test-ipv6.roedu.net
-domain:test-ipv6.se
-domain:test-ipv6.sin.vr.org
-domain:test-ipv6.ttk.ru
 domain:testflight.apple.com
-domain:testipv6.de
 domain:testonfox.com
 domain:tetrika-school.ru
 domain:tettediferro.it

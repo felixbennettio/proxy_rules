@@ -43,6 +43,9 @@ DOMAIN,apl-hamivideo.cdn.hinet.net
 DOMAIN,apm-misaka.biliapi.net
 DOMAIN,apple-tv-plus-press.apple.com
 DOMAIN,apple.com.akadns.net
+DOMAIN,appsgenaiserver-pa.clients.google.com
+DOMAIN,appsgenaiserver-pa.clients6.google.com
+DOMAIN,appsgenaiserver-pa.googleapis.com
 DOMAIN,as-dash-uk-live.akamaized.net
 DOMAIN,as-hls-uk-live.akamaized.net
 DOMAIN,assets.ppy.sh
@@ -155,6 +158,8 @@ DOMAIN,dashasiafox.akamaized.net
 DOMAIN,databank.worldbank.org
 DOMAIN,database.asahi.com
 DOMAIN,datarouter.apps.netherrealm.com
+DOMAIN,dc.applicationinsights.azure.com
+DOMAIN,dc.services.visualstudio.com
 DOMAIN,dcb0z5ovq92mz.cloudfront.net
 DOMAIN,ddpjwstwtpszg.cloudfront.net
 DOMAIN,dell.my.site.com
@@ -175,6 +180,7 @@ DOMAIN,docker-pinata-support.s3.amazonaws.com
 DOMAIN,doy2mn9upadnk.cloudfront.net
 DOMAIN,dqd0jw5gvbchn.cloudfront.net
 DOMAIN,dqrpb9wgowsf5.cloudfront.net
+DOMAIN,dropbox.zendesk.com
 DOMAIN,ds-linear-abematv.akamaized.net
 DOMAIN,ds-vod-abematv.akamaized.net
 DOMAIN,ds0h3roq6wcgc.cloudfront.net
@@ -275,6 +281,7 @@ DOMAIN,linear.tv.apple.com
 DOMAIN,link.theplatform.com
 DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
 DOMAIN,live-patreon-marketing.pantheonsite.io
+DOMAIN,live.applicationinsights.azure.com
 DOMAIN,lolstatic-a.akamaihd.net
 DOMAIN,m1.ppy.sh
 DOMAIN,manifest.prod.boltdns.net
@@ -297,7 +304,6 @@ DOMAIN,mwf-service.akamaized.net
 DOMAIN,my.ippure.com
 DOMAIN,myip.ipip.net
 DOMAIN,nbbb1bb7.pmhcjk.com
-DOMAIN,netflix.com.edgesuite.net
 DOMAIN,news.ycombinator.com
 DOMAIN,nix-community.github.io
 DOMAIN,notary-submissions-prod.s3-accelerate.amazonaws.com
@@ -409,6 +415,7 @@ DOMAIN,rsshub.rssforever.com
 DOMAIN,rsshub.umzzz.com
 DOMAIN,rsshub.woodland.cafe
 DOMAIN,rsshub2.asailor.org
+DOMAIN,rt.services.visualstudio.com
 DOMAIN,rtm.tnt-ea.com
 DOMAIN,sa78gs.wpc.edgecastcdn.net
 DOMAIN,scc-hamivideo.cdn.hinet.net
@@ -491,7 +498,6 @@ DOMAIN,scholar.googleusercontent.com
 DOMAIN,scholar.l.google.com
 DOMAIN,sni1dcb6gl.wpc.edgecastcdn.net
 DOMAIN,spectator.ppy.sh
-DOMAIN,spotify.com.edgesuite.net
 DOMAIN,spotify.map.fastly.net
 DOMAIN,spotify.map.fastlylb.net
 DOMAIN,ssl-lvlt.cdn.ea.com
@@ -936,7 +942,6 @@ DOMAIN-SUFFIX,1lib.pl
 DOMAIN-SUFFIX,1lib.sk
 DOMAIN-SUFFIX,1lib.to
 DOMAIN-SUFFIX,1lib.tw
-DOMAIN-SUFFIX,1mobile.com
 DOMAIN-SUFFIX,1mobile.tw
 DOMAIN-SUFFIX,1monsterbeatsbydreus.com
 DOMAIN-SUFFIX,1password.ca
@@ -1072,7 +1077,6 @@ DOMAIN-SUFFIX,3a5a.com
 DOMAIN-SUFFIX,3animalsextube.com
 DOMAIN-SUFFIX,3arabporn.com
 DOMAIN-SUFFIX,3arabtv.com
-DOMAIN-SUFFIX,3boys2girls.com
 DOMAIN-SUFFIX,3d-comics.com
 DOMAIN-SUFFIX,3d-december.com
 DOMAIN-SUFFIX,3d-game.com
@@ -1576,6 +1580,7 @@ DOMAIN-SUFFIX,adcommerce.tv
 DOMAIN-SUFFIX,addictedtocoffee.de
 DOMAIN-SUFFIX,addison-wesley.ch
 DOMAIN-SUFFIX,addons.mozilla.org
+DOMAIN-SUFFIX,addtodropbox.com
 DOMAIN-SUFFIX,addyoutube.com
 DOMAIN-SUFFIX,adelaidebbs.com
 DOMAIN-SUFFIX,adelaidenow.com.au
@@ -7490,6 +7495,7 @@ DOMAIN-SUFFIX,darwinsource.com
 DOMAIN-SUFFIX,darwinsource.org
 DOMAIN-SUFFIX,darwinsourcecode.com
 DOMAIN-SUFFIX,dasaob.online
+DOMAIN-SUFFIX,dash.ai
 DOMAIN-SUFFIX,dashlane.com
 DOMAIN-SUFFIX,dashly.app
 DOMAIN-SUFFIX,dashly.help
@@ -8301,6 +8307,7 @@ DOMAIN-SUFFIX,docs.com
 DOMAIN-SUFFIX,docs.new
 DOMAIN-SUFFIX,docs.rs
 DOMAIN-SUFFIX,docs.rw
+DOMAIN-SUFFIX,docsend.com
 DOMAIN-SUFFIX,doctor-videos.com
 DOMAIN-SUFFIX,doctorvoice.org
 DOMAIN-SUFFIX,documentforce.com
@@ -8509,12 +8516,15 @@ DOMAIN-SUFFIX,dropbox.tech
 DOMAIN-SUFFIX,dropboxapi.com
 DOMAIN-SUFFIX,dropboxbusiness.com
 DOMAIN-SUFFIX,dropboxcaptcha.com
+DOMAIN-SUFFIX,dropboxexperiment.com
 DOMAIN-SUFFIX,dropboxforum.com
 DOMAIN-SUFFIX,dropboxforums.com
 DOMAIN-SUFFIX,dropboxinsiders.com
+DOMAIN-SUFFIX,dropboxlegal.com
 DOMAIN-SUFFIX,dropboxmail.com
 DOMAIN-SUFFIX,dropboxpartners.com
 DOMAIN-SUFFIX,dropboxstatic.com
+DOMAIN-SUFFIX,dropboxteam.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 DOMAIN-SUFFIX,droplr.com
 DOMAIN-SUFFIX,drpc.org
@@ -12596,9 +12606,11 @@ DOMAIN-SUFFIX,heix.pp.ru
 DOMAIN-SUFFIX,helixstudios.net
 DOMAIN-SUFFIX,helloandroid.com
 DOMAIN-SUFFIX,helloavgirls.com
+DOMAIN-SUFFIX,hellofax.com
 DOMAIN-SUFFIX,hellokittybeats.com
 DOMAIN-SUFFIX,hellomoto.com
 DOMAIN-SUFFIX,helloqueer.com
+DOMAIN-SUFFIX,hellosign.com
 DOMAIN-SUFFIX,hellosmartbook.com
 DOMAIN-SUFFIX,helloss.pw
 DOMAIN-SUFFIX,hellotxt.com
@@ -16053,6 +16065,7 @@ DOMAIN-SUFFIX,libraryinformationtechnology.com
 DOMAIN-SUFFIX,librarylovefest.com
 DOMAIN-SUFFIX,libraryofthumbs.com
 DOMAIN-SUFFIX,libredd.it
+DOMAIN-SUFFIX,librewolf.dev
 DOMAIN-SUFFIX,librewolf.net
 DOMAIN-SUFFIX,libsolutions.app
 DOMAIN-SUFFIX,libsolutions.domains
@@ -21705,7 +21718,6 @@ DOMAIN-SUFFIX,quanben-xiaoshuo.com
 DOMAIN-SUFFIX,quanben.io
 DOMAIN-SUFFIX,quannengshen.org
 DOMAIN-SUFFIX,quantil.com
-DOMAIN-SUFFIX,quantumbooter.net
 DOMAIN-SUFFIX,quatrowireless.com
 DOMAIN-SUFFIX,quatrum.com.br
 DOMAIN-SUFFIX,quay.io
@@ -23483,7 +23495,6 @@ DOMAIN-SUFFIX,sites.new
 DOMAIN-SUFFIX,situero.com
 DOMAIN-SUFFIX,six-degrees.io
 DOMAIN-SUFFIX,six9dy.pw
-DOMAIN-SUFFIX,sixte.st
 DOMAIN-SUFFIX,sixth.biz
 DOMAIN-SUFFIX,sjcollect.com
 DOMAIN-SUFFIX,sjhsp1.buzz
@@ -24499,6 +24510,7 @@ DOMAIN-SUFFIX,surfshark.com
 DOMAIN-SUFFIX,surfsharkdns.com
 DOMAIN-SUFFIX,surge-activation.com
 DOMAIN-SUFFIX,surge.run
+DOMAIN-SUFFIX,suroot.com
 DOMAIN-SUFFIX,surrenderat20.net
 DOMAIN-SUFFIX,suruga-ya.com
 DOMAIN-SUFFIX,suruga-ya.jp
@@ -24960,30 +24972,7 @@ DOMAIN-SUFFIX,tesla.services
 DOMAIN-SUFFIX,teslaenergy.services
 DOMAIN-SUFFIX,teslamotors.com
 DOMAIN-SUFFIX,teslazta.net
-DOMAIN-SUFFIX,test-ipv6.alpinedc.ch
-DOMAIN-SUFFIX,test-ipv6.arauc.br
-DOMAIN-SUFFIX,test-ipv6.belwue.net
-DOMAIN-SUFFIX,test-ipv6.carnet.hr
-DOMAIN-SUFFIX,test-ipv6.cl
-DOMAIN-SUFFIX,test-ipv6.com
-DOMAIN-SUFFIX,test-ipv6.cs.umd.edu
-DOMAIN-SUFFIX,test-ipv6.csclub.uwaterloo.ca
-DOMAIN-SUFFIX,test-ipv6.cz
-DOMAIN-SUFFIX,test-ipv6.epic.network
-DOMAIN-SUFFIX,test-ipv6.fratec.net
-DOMAIN-SUFFIX,test-ipv6.freerangecloud.com
-DOMAIN-SUFFIX,test-ipv6.go6.si
-DOMAIN-SUFFIX,test-ipv6.hu
-DOMAIN-SUFFIX,test-ipv6.is
-DOMAIN-SUFFIX,test-ipv6.iu13.net
-DOMAIN-SUFFIX,test-ipv6.ke.liquidtelecom.net
-DOMAIN-SUFFIX,test-ipv6.noroutetohost.net
-DOMAIN-SUFFIX,test-ipv6.roedu.net
-DOMAIN-SUFFIX,test-ipv6.se
-DOMAIN-SUFFIX,test-ipv6.sin.vr.org
-DOMAIN-SUFFIX,test-ipv6.ttk.ru
 DOMAIN-SUFFIX,testflight.apple.com
-DOMAIN-SUFFIX,testipv6.de
 DOMAIN-SUFFIX,testonfox.com
 DOMAIN-SUFFIX,tetrika-school.ru
 DOMAIN-SUFFIX,tettediferro.it
