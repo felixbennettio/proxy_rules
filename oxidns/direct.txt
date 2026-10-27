@@ -12737,6 +12737,7 @@ domain:awc618.com
 domain:awcloud.com
 domain:awcn.cc
 domain:awehunt.com
+domain:awemeughun.com
 domain:awemeuglang.com
 domain:awemeugsoul.com
 domain:awemeugwave.com
@@ -86732,7 +86733,6 @@ domain:tjsjwygg.com
 domain:tjsjx.com
 domain:tjskq.com
 domain:tjskqyy.com
-domain:tjsptech.com
 domain:tjst.net
 domain:tjstats.com
 domain:tjtele.com
