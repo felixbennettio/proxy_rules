@@ -1,0 +1,78 @@
+name: Mirror Surge modules
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 04:47 UTC+8, before the GitLab 05:17 synchronization.
+    - cron: "47 20 * * *"
+  push:
+    branches: [main]
+    paths: ["modules/**", "tools/sync_modules.py", "tools/test_modules.py", "tools/build_dist_manifest.py", ".github/workflows/sync-modules.yml"]
+  pull_request:
+    paths: ["modules/**", "tools/sync_modules.py", "tools/test_modules.py", "tools/build_dist_manifest.py", ".github/workflows/sync-modules.yml"]
+
+permissions:
+  contents: write
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
+concurrency:
+  group: build-consolidated-rules
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test module mirroring and rule generation
+        run: python3 -m unittest discover -s tools -p 'test_*.py'
+      - name: Refresh modules and all declared script dependencies
+        run: python3 tools/sync_modules.py
+      - name: Update published-file manifest
+        run: python3 tools/build_dist_manifest.py
+      - name: Report source freshness
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path("modules/STATUS.json")
+          if not path.exists():
+              raise SystemExit("No module mirror report was produced")
+          report = json.loads(path.read_text())
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as out:
+              out.write(f"Modules: {report['modules']}; scripts: {report['scripts']}\n\n")
+              out.write(f"Fresh sources: {report['fresh_sources']}; retained cached sources: {report['cached_sources']}\n\n")
+              for item in report["sources"]:
+                  if item["status"] == "cached":
+                      out.write(f"- Retained `{item['path']}`: {item['error']}; last success {item.get('last_success')}\n")
+          if report["cached_sources"]:
+              print("::warning::Some upstream sources are unavailable; verified existing copies were retained. See the job summary.")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: module-mirror-report
+          path: modules/STATUS.json
+          retention-days: 7
+      - name: Publish module snapshot
+        if: github.event_name != 'pull_request'
+        run: |
+          set -euo pipefail
+          git add -A -- modules DIST_MANIFEST.json
+          if git diff --cached --quiet; then
+            echo "No module changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh mirrored Surge modules and scripts"
+          git push
