@@ -16,6 +16,8 @@ def discover_published_files(root: Path) -> tuple[str, ...]:
             + [str(path.relative_to(root)) for path in (root / "dns").glob("*.list")]
             + [str(path.relative_to(root)) for path in (root / "oxidns").glob("*.txt")]
             + [str(path.relative_to(root)) for path in (root / "geox").glob("*.dat")]
+            + [str(path.relative_to(root)) for path in (root / "modules").rglob("*")
+               if path.is_file() and path.suffix in {".sgmodule", ".js", ".json"}]
         )
     )
 
