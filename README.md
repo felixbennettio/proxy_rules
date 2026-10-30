@@ -105,13 +105,13 @@ not `DOMAIN-SET`, to preserve keyword matching.
 
 ```ini
 [Rule]
-RULE-SET,https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/proxy.list,Proxy
-RULE-SET,https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/direct.list,DIRECT
+RULE-SET,https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/proxy.list,Proxy
+RULE-SET,https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/direct.list,DIRECT
 FINAL,Proxy
 
 [Host]
-RULE-SET:https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/dns/direct.list = server:https://dns.alidns.com/dns-query
-RULE-SET:https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/dns/proxy.list = server:https://dns.google/dns-query
+RULE-SET:https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/dns/direct.list = server:https://dns.alidns.com/dns-query
+RULE-SET:https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/dns/proxy.list = server:https://dns.google/dns-query
 ```
 
 The example assumes a policy named `Proxy`; use your own policies and DNS
@@ -154,19 +154,37 @@ Use these URLs in mihomo `geox-url` configuration:
 
 ```yaml
 geox-url:
-  geoip: https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/geox/geoip.dat
-  geosite: https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/geox/geosite.dat
+  geoip: https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/geox/geoip.dat
+  geosite: https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/geox/geosite.dat
 ```
 
 ## Distribution
 
-Recommended jsDelivr endpoint:
+Recommended JSDMirror endpoint:
 
 ```text
-https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/<file>
+https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/<file>
 ```
 
-Raw GitHub URLs can be used as fallback.
+JSDMirror preserves the jsDelivr `/gh/<owner>/<repo>@<ref>/<file>` path. Only
+the hostname changes; keep `@main` for subscriptions that follow daily updates.
+The same base URL serves root rule lists, `dns/*.list`, `oxidns/*.txt`, and
+`geox/*.dat`. For example:
+
+```text
+https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/oxidns/ai.txt
+```
+
+If JSDMirror is unavailable or still serves an older cached version, use the
+GitHub Raw fallback (a proxy may be needed on some networks):
+
+```text
+https://raw.githubusercontent.com/felixbennettio/proxy_rules/main/<file>
+```
+
+Replace `<file>` with the same repository-relative path, for example `ai.list`
+or `dns/direct.list`. Clients that only accept one rule URL need this fallback
+selected manually; listing it here does not enable automatic client failover.
 
 ## Update process
 
@@ -180,3 +198,23 @@ tools/build_dist_manifest.py
 ```
 
 The workflow can also be triggered manually from GitHub Actions.
+
+After committing generated files, the workflow refreshes the jsDelivr upstream
+cache using `https://purge.jsdelivr.net/gh/felixbennettio/proxy_rules@main/<file>`.
+This endpoint must stay on jsDelivr: JSDMirror has a separate edge cache, and
+changing the purge hostname does not refresh it.
+
+To refresh JSDMirror's edge cache as well, add a repository Actions secret named
+`JSDMIRROR_API_KEY`, obtained from [JSDMirror Cache](https://cache.jsdmirror.com/#api).
+The workflow submits each published URL to
+`https://cache.jsdmirror.com/api/v1/purge` using POST, `X-API-Key` authentication,
+and `method: invalidate`, then checks that the JSON response has `success: true`.
+Refresh requests use the service's configured primary CDN provider and consume
+its refresh quota. API acceptance does not prove every edge node is already fresh.
+
+Without that secret, the workflow explicitly skips the JSDMirror edge refresh
+and warns that updates rely on normal cache expiry. Refresh failures are also
+reported as Actions warnings without discarding already published rule files.
+Upstream purging alone cannot guarantee immediate JSDMirror freshness; use the
+Raw fallback for an urgent update. For a reproducible snapshot, replace `@main`
+with a commit SHA; that URL stays fixed and will not follow later updates.
