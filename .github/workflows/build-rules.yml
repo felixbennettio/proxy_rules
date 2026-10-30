@@ -103,29 +103,3 @@ jobs:
           git add -- "${generated_files[@]}"
           git commit -m "Sort manual rules and build consolidated assets"
           git push
-
-      - name: Purge jsDelivr cache
-        run: |
-          set -euo pipefail
-          sleep 5
-
-          mapfile -t published_files < <(
-            python3 - <<'PY'
-          import json
-          from pathlib import Path
-          manifest = json.loads(Path("DIST_MANIFEST.json").read_text(encoding="utf-8"))
-          for path in manifest["files"]:
-              print(path)
-          PY
-          )
-
-          failures=0
-          for file in "${published_files[@]}"; do
-            url="https://purge.jsdelivr.net/gh/felixbennettio/proxy_rules@main/${file}"
-            echo "Purging ${url}"
-            curl --fail --location --silent --show-error --retry 5 --retry-delay 2 --retry-all-errors "${url}" || failures=$((failures + 1))
-          done
-
-          if [ "${failures}" -gt 0 ]; then
-            echo "Warning: ${failures} jsDelivr purge requests failed."
-          fi

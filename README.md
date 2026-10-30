@@ -105,13 +105,13 @@ not `DOMAIN-SET`, to preserve keyword matching.
 
 ```ini
 [Rule]
-RULE-SET,https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/proxy.list,Proxy
-RULE-SET,https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/felixbennettio/proxy_rules/main/proxy.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/felixbennettio/proxy_rules/main/direct.list,DIRECT
 FINAL,Proxy
 
 [Host]
-RULE-SET:https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/dns/direct.list = server:https://dns.alidns.com/dns-query
-RULE-SET:https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/dns/proxy.list = server:https://dns.google/dns-query
+RULE-SET:https://raw.githubusercontent.com/felixbennettio/proxy_rules/main/dns/direct.list = server:https://dns.alidns.com/dns-query
+RULE-SET:https://raw.githubusercontent.com/felixbennettio/proxy_rules/main/dns/proxy.list = server:https://dns.google/dns-query
 ```
 
 The example assumes a policy named `Proxy`; use your own policies and DNS
@@ -154,19 +154,21 @@ Use these URLs in mihomo `geox-url` configuration:
 
 ```yaml
 geox-url:
-  geoip: https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/geox/geoip.dat
-  geosite: https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/geox/geosite.dat
+  geoip: https://raw.githubusercontent.com/felixbennettio/proxy_rules/main/geox/geoip.dat
+  geosite: https://raw.githubusercontent.com/felixbennettio/proxy_rules/main/geox/geosite.dat
 ```
 
-## Distribution
+## GitHub rule URLs
 
-Recommended jsDelivr endpoint:
+Use GitHub Raw file URLs in client subscriptions:
 
 ```text
-https://cdn.jsdelivr.net/gh/felixbennettio/proxy_rules@main/<file>
+https://raw.githubusercontent.com/felixbennettio/proxy_rules/main/<file>
 ```
 
-Raw GitHub URLs can be used as fallback.
+Replace `<file>` with the repository-relative path, such as `ai.list`,
+`dns/direct.list`, or `oxidns/ai.txt`. GitHub `blob` pages are HTML pages;
+use the Raw URL above when a client needs the rule file itself.
 
 ## Update process
 
