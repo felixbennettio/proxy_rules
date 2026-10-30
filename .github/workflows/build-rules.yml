@@ -104,8 +104,7 @@ jobs:
           git commit -m "Sort manual rules and build consolidated assets"
           git push
 
-      # JSDMirror uses jsDelivr upstream; its edge cache is refreshed separately below.
-      - name: Purge jsDelivr upstream cache
+      - name: Purge jsDelivr cache
         run: |
           set -euo pipefail
           sleep 5
@@ -124,69 +123,9 @@ jobs:
           for file in "${published_files[@]}"; do
             url="https://purge.jsdelivr.net/gh/felixbennettio/proxy_rules@main/${file}"
             echo "Purging ${url}"
-            curl --fail --location --silent --show-error --connect-timeout 10 --max-time 30 --retry-max-time 120 --retry 5 --retry-delay 2 --retry-all-errors "${url}" || failures=$((failures + 1))
+            curl --fail --location --silent --show-error --retry 5 --retry-delay 2 --retry-all-errors "${url}" || failures=$((failures + 1))
           done
 
           if [ "${failures}" -gt 0 ]; then
-            echo "::warning::${failures} jsDelivr upstream purge requests failed."
-          fi
-
-      - name: Refresh JSDMirror edge cache
-        env:
-          JSDMIRROR_API_KEY: ${{ secrets.JSDMIRROR_API_KEY }}
-        run: |
-          set -euo pipefail
-          if [ -z "${JSDMIRROR_API_KEY}" ]; then
-            echo "::warning::JSDMIRROR_API_KEY is not configured; JSDMirror updates rely on cache expiry. Use GitHub Raw for urgent updates."
-            exit 0
-          fi
-
-          temp_dir="$(mktemp -d)"
-          trap 'rm -rf -- "$temp_dir"' EXIT
-          mapfile -t published_files < <(
-            python3 - <<'PY'
-          import json
-          from pathlib import Path
-          manifest = json.loads(Path("DIST_MANIFEST.json").read_text(encoding="utf-8"))
-          for path in manifest["files"]:
-              print(path)
-          PY
-          )
-
-          failures=0
-          for file in "${published_files[@]}"; do
-            url="https://cdn.jsdmirror.com/gh/felixbennettio/proxy_rules@main/${file}"
-            echo "Refreshing ${url}"
-            python3 - "$url" > "$temp_dir/payload.json" <<'PY'
-          import json
-          import sys
-          print(json.dumps({"url": sys.argv[1], "method": "invalidate"}))
-          PY
-            if curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \
-              --retry 3 --retry-delay 2 --retry-max-time 120 --retry-all-errors \
-              --header "Content-Type: application/json" \
-              --header "X-API-Key: ${JSDMIRROR_API_KEY}" \
-              --data-binary "@$temp_dir/payload.json" \
-              --output "$temp_dir/response.json" \
-              "https://cache.jsdmirror.com/api/v1/purge"; then
-              if python3 - "$temp_dir/response.json" <<'PY'
-          import json
-          import sys
-          try:
-              with open(sys.argv[1], encoding="utf-8") as response:
-                  accepted = json.load(response).get("success") is True
-          except (OSError, ValueError, AttributeError):
-              accepted = False
-          sys.exit(0 if accepted else 1)
-          PY
-              then
-                continue
-              fi
-            fi
-            echo "::warning::JSDMirror refresh was not accepted for ${file}."
-            failures=$((failures + 1))
-          done
-
-          if [ "${failures}" -gt 0 ]; then
-            echo "::warning::${failures} JSDMirror refresh requests failed; use GitHub Raw until caches expire."
+            echo "Warning: ${failures} jsDelivr purge requests failed."
           fi

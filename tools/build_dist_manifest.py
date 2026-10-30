@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "DIST_MANIFEST.json"
 
-# Single source of truth for files published through JSDMirror and its jsDelivr upstream.
+# Single source of truth for files published through jsDelivr.
 # Root-level portable rule lists, generated DNS rule files, and GeoX assets are published.
 def discover_published_files(root: Path) -> tuple[str, ...]:
     return tuple(
