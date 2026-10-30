@@ -339256,7 +339256,6 @@ domain:telemetry.clutch.engineering
 domain:telemetry.codefusion.technology
 domain:telemetry.coder.com
 domain:telemetry.commonspirit.org
-domain:telemetry.console.api.aws
 domain:telemetry.core.emea.giservices.io
 domain:telemetry.crossmint.com
 domain:telemetry.d.taegiscloud.com

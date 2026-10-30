@@ -6,4 +6,5 @@
 
 domain:ac.dun.163.com
 domain:ac.dun.163yun.com
+domain:console.api.aws
 domain:cstaticdun.126.net
