@@ -879,6 +879,7 @@ domain:18comic-god.club
 domain:18comic-god.xyz
 domain:18comic.cc
 domain:18comic.company
+domain:18comic.ink
 domain:18comic.org
 domain:18comic.vip
 domain:18commic.com
@@ -4633,6 +4634,7 @@ domain:bingapistatistics.com
 domain:bingoporno.com
 domain:bingparachute.com
 domain:bingsandbox.com
+domain:bingstatic.com
 domain:bingvisualsearch.com
 domain:bingworld.com
 domain:bingx.com
@@ -5620,6 +5622,7 @@ domain:bsappapi.com
 domain:bscdnweb.com
 domain:bsi.ir
 domain:bsky.app
+domain:bsky.chat
 domain:bsky.network
 domain:bsky.social
 domain:bspb.ru
@@ -18133,6 +18136,7 @@ domain:msftconnecttest.com
 domain:msfteducation.ca
 domain:msftncsi.com
 domain:msftnet.org
+domain:msftstatic.com
 domain:msgamesresearch.com
 domain:msgamestudios.com
 domain:msguancha.com
@@ -19316,6 +19320,7 @@ domain:npm.im
 domain:npm.io
 domain:npmjs.com
 domain:npmjs.org
+domain:npmx.dev
 domain:npnt.me
 domain:npr.org
 domain:nps.gov
@@ -25408,9 +25413,12 @@ domain:tiktokeu-cdn.com
 domain:tiktokglobalshopv.com
 domain:tiktokminis.us
 domain:tiktokrow-cdn.com
+domain:tiktokshop.com
+domain:tiktokstaticb.com
 domain:tiktokv.com
 domain:tiktokv.eu
 domain:tiktokv.us
+domain:tiktokvapp.com
 domain:tiktokw.eu
 domain:tiktokw.us
 domain:tilda.cc
