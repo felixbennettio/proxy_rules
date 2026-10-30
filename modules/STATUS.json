@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30T04:31:56+00:00",
+  "checked_at": "2026-10-30T04:59:45+00:00",
   "status": "using_cached_sources",
   "modules": 20,
   "scripts": 28,
@@ -83,7 +83,7 @@
       "url": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/rule-parser.js",
       "path": "modules/scripts/5f575b117bdf0130-rule-parser.js",
       "status": "fresh",
-      "last_success": "2026-10-30T04:31:56+00:00",
+      "last_success": "2026-10-30T04:59:45+00:00",
       "sha256": "6d30380cc68e112b5bcb5d9b2013d553d3c48612b1c61e78f0e0bfae3e48ca2c"
     },
     {
@@ -114,7 +114,7 @@
       "url": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.js",
       "path": "modules/scripts/71d45f38fd72e70b-script-hub.js",
       "status": "fresh",
-      "last_success": "2026-10-30T04:31:56+00:00",
+      "last_success": "2026-10-30T04:59:45+00:00",
       "sha256": "6a0c1d8e05136e7f134bfbf0dd94a8ab7356b22607a1ba7bace57820e2bc7af1"
     },
     {
@@ -137,7 +137,7 @@
       "url": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.js",
       "path": "modules/scripts/884e36ed7bfefa03-script-converter.js",
       "status": "fresh",
-      "last_success": "2026-10-30T04:31:56+00:00",
+      "last_success": "2026-10-30T04:59:45+00:00",
       "sha256": "27fc22ac5a40364fbe0728d7264e163431656e7b142cde6337ecad11e5d60b78"
     },
     {
@@ -160,7 +160,7 @@
       "url": "https://github.com/NSRingo/WeatherKit/releases/download/v3.1.0/response.bundle.js",
       "path": "modules/scripts/a03090860fa53c95-response.bundle.js",
       "status": "fresh",
-      "last_success": "2026-10-30T04:31:56+00:00",
+      "last_success": "2026-10-30T04:59:45+00:00",
       "sha256": "e7c75725d67c4e8f78d3fdc003481762a377c624ae89bba64b23b2cb5ea9f342"
     },
     {
@@ -215,7 +215,7 @@
       "url": "https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.js",
       "path": "modules/scripts/d1171e6520deae64-Rewrite-Parser.js",
       "status": "fresh",
-      "last_success": "2026-10-30T04:31:56+00:00",
+      "last_success": "2026-10-30T04:59:45+00:00",
       "sha256": "c5e46afa219424e22bcba151dbd6f5e4c6caf518cfdf3317381f4c7e2068e51b"
     },
     {
@@ -302,7 +302,7 @@
       "url": "https://github.com/Oranjekop/Surge-Module/raw/refs/heads/main/Module/RedPaper_remove_ads.sgmodule",
       "path": "modules/upstream/RedPaper_remove_ads.sgmodule",
       "status": "cached",
-      "error": "TimeoutError",
+      "error": "HTTP 404",
       "last_success": "2026-06-14T10:51:54.329209+00:00",
       "sha256": "853d2d3c138ebd53d02e6dd206e05dbcd2a720e92ad14adca56197e86d9a111d"
     },
